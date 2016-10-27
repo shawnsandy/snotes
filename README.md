@@ -40,8 +40,8 @@ If you discover any security related issues, please email shawnsandy04@gmail.com
 
 ## Credits
 
-- [:author_name][link-author]
-- [All Contributors][link-contributors]
+- [shawn sandy]('http://shawnsandy.com)
+
 
 ## License
 
