@@ -40,7 +40,7 @@ If you discover any security related issues, please email shawnsandy04@gmail.com
 
 ## Credits
 
-- [shawn sandy]('http://shawnsandy.com)
+- [shawn sandy](http://shawnsandy.com)
 
 
 ## License
