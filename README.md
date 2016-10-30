@@ -29,14 +29,15 @@ php artisan packager:get https://github.com/shawnsandy/PkgStart MyVendor MyPacka
 Got to config/app.php and find and replace (replace MyVendor/MyPackage with those you provided)
 
 ```php
- ShawnSandy\Myvendor\MyPackageProvider::class,
+
+ Myvendor\MyPackage\MyPackageProvider::class,
  
  ```
  with 
  
  ```php
  
-  ShawnSandy\PkgStart\Provider::class,
+  Myvendor\MyPackage\Provider::class,
   
   ```
   
