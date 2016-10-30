@@ -1,16 +1,13 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: shawnsandy
- * Date: 10/27/16
- * Time: 12:50 PM
+ * Deprecated use The /Provider.php in its place
  */
 
-namespace ShawnSandy\PkgStart\App;
+namespace ShawnSandy\PkgStart;
 
 use Illuminate\Support\ServiceProvider ;
 
-class Provider extends ServiceProvider
+class PkgStartServiceProvider extends ServiceProvider
 {
 
     /**

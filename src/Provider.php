@@ -42,7 +42,7 @@ class Provider extends ServiceProvider
      */
     public function register()
     {
-        /***  Remove line to uncomment and setup ****
+        /***  remove this line to uncomment and setup ****
        $this->mergeConfigFrom(
             __DIR__ . 'App/config/config.php', '__YOUR_KEY_NAME__'
         );
@@ -51,6 +51,6 @@ class Provider extends ServiceProvider
                 return new YOUR_CLASSNAME();
             }
         );
-      *** remove line to uncomment ***/
+      *** remove this line to uncomment ***/
     }
 }
