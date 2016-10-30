@@ -26,6 +26,28 @@ php artisan packager:get https://github.com/shawnsandy/PkgStart MyVendor MyPacka
 
 ```
 
+Got to config/app.php and find and replace (replace MyVendor/MyPackage with those you provided)
+
+```php
+ ShawnSandy\Myvendor\MyPackageProvider::class,
+ 
+ ```
+ with 
+ 
+ ```php
+ 
+  ShawnSandy\PkgStart\Provider::class,
+  
+  ```
+  
+  Dump composer autoload
+  
+  ```bash
+  
+  composer dumpautoload
+  
+  ```
+
 Go to `packages\MyVendor\MyPAckage` to and start coding your package, see [Laravel Packager](https://github.com/Jeroen-G/laravel-packager) for more info and options.
 
 __Readme__ delete this readme and replace with `README.START.md`
