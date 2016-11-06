@@ -72,14 +72,14 @@ php artisan packager:get https://github.com/shawnsandy/PkgStart MyVendor MyPacka
 
 Got to config/app.php and find and replace (replace MyVendor/MyPackage with those you provided)
 
-```php
+``` php
 
  Myvendor\MyPackage\MyPackageServiceProvider::class,
  
  ```
  with 
  
- ```php
+ ``` php
  
   Myvendor\MyPackage\ServicesProvider::class,
   
@@ -87,7 +87,7 @@ Got to config/app.php and find and replace (replace MyVendor/MyPackage with thos
   
   Dump composer autoload
   
-  ```bash
+  ``` bash
   
   composer dumpautoload
   
