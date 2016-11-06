@@ -9,7 +9,7 @@ A simple toolkit to KickStart laravel package development.
 
 ``` bash
 
-git clone https:/github.com/shawnsandy/pkgstart myapp/packages/Vendor/PackageName
+git clone https:/github.com/shawnsandy/PkgStart myapp/packages/Vendor/PackageName
 
 ```
 
@@ -19,17 +19,17 @@ git clone https:/github.com/shawnsandy/pkgstart myapp/packages/Vendor/PackageNam
 
 "psr-4": {
             "ShawnSandy\\Jstables\\": "packages/ShawnSandy/Jstables/src",`
-            },
+ },
             
 ```
 
 * Add to Got to config/app.php and the package service provider
 
- ``` php
- 
-  Myvendor\MyPackage\ServicesProvider::class,
-  
-  ```
+``` php
+
+Myvendor\MyPackage\ServicesProvider::class,
+
+```
   
 * CD into your new package dir and run `prefill.php` and follow the interactive prompts  
 
