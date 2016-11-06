@@ -6,7 +6,7 @@
  * Time: 12:50 PM
  */
 
-namespace ShawnSandy\PkgStart\App;
+namespace :namespace\App;
 
 use Illuminate\Support\ServiceProvider ;
 
