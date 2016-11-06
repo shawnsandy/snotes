@@ -30,9 +30,9 @@ git clone https:/github.com/shawnsandy/PkgStart myapp/packages/Vendor/PackageNam
 Myvendor\MyPackage\ServicesProvider::class,
 
 ```
-        >Replace :author_name :author_username :author_website :author_email :vendor :package_name :package_description with            their correct values in README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md and composer.json files
+
   
-* CD into your new package dir and run `$ php prefill.php` in the command line to make all replacements at once:  Delete the file prefill.php as well.  
+* CD into your new package dir and run `$ php prefill.php` in the command line to replace :author_name :author_username :author_website :author_email :vendor :package_name :package_description with their correct values in README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md and composer.json files:  Delete the file prefill.php when done.
 
 ``` bash 
 
