@@ -1,0 +1,14 @@
+{
+  "name": "pkgstart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/shawnsandy/PkgStart",
+    "type": "git"
+  },
+  "author": "shawn sandy",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
