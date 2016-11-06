@@ -31,6 +31,14 @@ git clone https:/github.com/shawnsandy/pkgstart myapp/packages/Vendor/PackageNam
   
   ```
   
+* CD into your new package dir and run `prefill.php` and follow the interactive prompts  
+
+``` bash 
+
+ php prefill.php
+ 
+```
+  
 Dump composer autoload
 
 ``` bash
