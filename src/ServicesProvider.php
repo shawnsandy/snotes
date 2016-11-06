@@ -1,6 +1,6 @@
 <?php
 
-namespace ShawnSandy\PkgStart;
+namespace :namespace;
 
 use Illuminate\Support\ServiceProvider;
 
