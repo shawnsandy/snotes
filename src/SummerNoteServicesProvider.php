@@ -3,6 +3,8 @@
 namespace ShawnSandy\Summernote;
 
 use Illuminate\Support\ServiceProvider;
+use ShawnSandy\Summernote\App\Notes\Notes;
+
 
 /**
  * Class Provider
@@ -57,11 +59,11 @@ class SummerNoteServicesProvider extends ServiceProvider
     {
 
        $this->mergeConfigFrom(
-            __DIR__ . 'App/config/config.php', 'snote'
+            __DIR__ . '/App/config/config.php', 'snote'
         );
         $this->app->bind(
             'Notes', function () {
-                return new YOUR_CLASS_NAME();
+                return new Notes();
             }
         );
     }
