@@ -6,7 +6,7 @@
  * Time: 11:29 AM
  */
 
-namespace ShawnSandy\App\Summernote;
+namespace ShawnSandy\Summernote\App\Notes;
 
 
 use Illuminate\Support\Facades\Facade;

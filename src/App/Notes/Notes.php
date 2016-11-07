@@ -6,7 +6,7 @@
  * Time: 11:27 AM
  */
 
-namespace ShawnSandy\App\Summernote;
+namespace ShawnSandy\Summernote\App\Notes;
 
 
 class Notes
