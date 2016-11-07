@@ -18,12 +18,12 @@ git clone https:/github.com/shawnsandy/PkgStart myapp/packages/Vendor/PackageNam
 ``` json
 
 "psr-4": {
-            "ShawnSandy\\Jstables\\": "packages/ShawnSandy/Jstables/src",`
+            "ShawnSandy\\Jstables\\": "packages/ShawnSandy/Jstables/src",
  },
             
 ```
 
-* Add to Got to config/app.php and the package service provider
+* Go to config/app.php and add the package service provider
 
 ``` php
 
