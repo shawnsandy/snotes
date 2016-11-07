@@ -1111,6 +1111,10 @@ strip-indent@^1.0.1:
   dependencies:
     get-stdin "^4.0.1"
 
+summernote:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/summernote/-/summernote-0.8.2.tgz#5be7bbc56e8db83c3804fa2dc8c46e5061cfb7bd"
+
 supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"

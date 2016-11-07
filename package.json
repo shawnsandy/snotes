@@ -9,6 +9,7 @@
   "author": "shawn sandy",
   "license": "MIT",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "summernote": "^0.8.2"
   }
 }

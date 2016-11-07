@@ -1,6 +1,6 @@
 <?php
 
-namespace :namespace;
+namespace ShawnSandy\Summernote;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
  *
  * @package ShawnSandy\PkgStart
  */
-class ServicesProvider extends ServiceProvider
+class SummerNoteServicesProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -22,22 +22,23 @@ class ServicesProvider extends ServiceProvider
             include __DIR__ . '/App/routes.php';
         }
 
+
         /**
          * Package views
          */
-        $this->loadViewsFrom(__DIR__ . '/resources/views', '__PACKAGE_NAME__');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'snote');
         $this->publishes(
             [
-                __DIR__ . '/resources/views' => resource_path('views/vendor/__PACKAGE_NAME__'),
-            ], 'toastr-alerts'
+                __DIR__ . '/resources/views' => resource_path('views/vendor/snote'),
+            ], 'snote-alerts'
         );
 
         /**
          * Package config
          */
         $this->publishes(
-            [__DIR__ . '/config/pagekit.php' => config_path('pagekit.php')],
-            'pagekit-config'
+            [__DIR__ . 'App/config/config.php' => config_path('snote.php')],
+            'snote-config'
         );
 
         if (!$this->app->runningInConsole()) :
@@ -54,15 +55,14 @@ class ServicesProvider extends ServiceProvider
      */
     public function register()
     {
-        /***  remove this line to uncomment and setup ****
+
        $this->mergeConfigFrom(
-            __DIR__ . 'App/config/config.php', '__YOUR_KEY_NAME__'
+            __DIR__ . 'App/config/config.php', 'snote'
         );
         $this->app->bind(
-            '__YOUR_FACADE_NAME__', function () {
+            'Notes', function () {
                 return new YOUR_CLASS_NAME();
             }
         );
-      *** remove this line to uncomment ***/
     }
 }

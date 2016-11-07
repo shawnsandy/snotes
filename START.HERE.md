@@ -32,7 +32,7 @@ Myvendor\MyPackage\ServicesProvider::class,
 ```
 
   
-* CD into your new package dir and run `$ php prefill.php` in the command line to replace :author_name :author_username :author_website :author_email :vendor :package_name :package_description with their correct values in README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md and composer.json files:  Delete the file prefill.php when done.
+* CD into your new package dir and run `$ php prefill.php` in the command line to replace Shawn Sandy shawnsandy http://github.com/shawnsandy shawnsandy04@gmail.com shawnsandy summernote Summernote with their correct values in README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md and composer.json files:  Delete the file prefill.php when done.
 
 ``` bash 
 
@@ -87,7 +87,7 @@ Myvendor\MyPackage\ServicesProvider::class,
 ```
   
   
-* CD into your new package dir and run `$ php prefill.php` in the command line to replace :author_name :author_username :author_website :author_email :vendor :package_name :package_description with their correct values in README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md and composer.json files:  Delete the file prefill.php when done.
+* CD into your new package dir and run `$ php prefill.php` in the command line to replace Shawn Sandy shawnsandy http://github.com/shawnsandy shawnsandy04@gmail.com shawnsandy summernote Summernote with their correct values in README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md and composer.json files:  Delete the file prefill.php when done.
 
 ``` bash 
 

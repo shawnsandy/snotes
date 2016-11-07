@@ -6,7 +6,7 @@
  * Time: 12:50 PM
  */
 
-namespace :namespace\App;
+namespace ShawnSandy\Summernote\App;
 
 use Illuminate\Support\ServiceProvider ;
 
