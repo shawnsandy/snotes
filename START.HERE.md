@@ -80,19 +80,28 @@ Got to config/app.php and find and replace (replace MyVendor/MyPackage with thos
  ```
  with 
  
- ``` php
- 
-  Myvendor\MyPackage\ServicesProvider::class,
+``` php
+
+Myvendor\MyPackage\ServicesProvider::class,
+
+```
   
-  ```
+  
+* CD into your new package dir and run `$ php prefill.php` in the command line to replace :author_name :author_username :author_website :author_email :vendor :package_name :package_description with their correct values in README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md and composer.json files:  Delete the file prefill.php when done.
+
+``` bash 
+
+php prefill.php
+
+``` 
   
   Dump composer autoload
   
-  ``` bash
-  
-  composer dumpautoload
-  
-  ```
+``` bash
+
+composer dumpautoload
+
+```
 
 Go to `packages\MyVendor\MyPAckage` to and start coding your package, see [Laravel Packager](https://github.com/Jeroen-G/laravel-packager) for more info and options.
 
