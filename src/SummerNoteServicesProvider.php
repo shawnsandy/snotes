@@ -32,16 +32,27 @@ class SummerNoteServicesProvider extends ServiceProvider
         $this->publishes(
             [
                 __DIR__ . '/resources/views' => resource_path('views/vendor/snote'),
-            ], 'snote-alerts'
+            ], 'snote-views'
+        );
+
+        /**
+         * Package assets
+         */
+        $this->publishes(
+          [
+              __DIR__.'/../node_modules/summernote/dist/' => public_path('assets/summernote')
+          ], 'snote-assets'
         );
 
         /**
          * Package config
          */
         $this->publishes(
-            [__DIR__ . 'App/config/config.php' => config_path('snote.php')],
+            [__DIR__ . '/App/config/config.php' => config_path('snote.php')],
             'snote-config'
         );
+
+
 
         if (!$this->app->runningInConsole()) :
             include_once __DIR__ . '/App/Helpers/helper.php';
