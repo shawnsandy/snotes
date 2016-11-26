@@ -2,6 +2,7 @@
 
 namespace ShawnSandy\Summernote;
 
+use Blade;
 use Illuminate\Support\ServiceProvider;
 use ShawnSandy\Summernote\App\Notes\Notes;
 
@@ -28,11 +29,12 @@ class SummerNoteServicesProvider extends ServiceProvider
         /**
          * Package views
          */
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'snote');
+        $this->loadViewsFrom(__DIR__ . '/App/resources/views/', 'notes');
+
         $this->publishes(
             [
-                __DIR__ . '/resources/views' => resource_path('views/vendor/snote'),
-            ], 'snote-views'
+                __DIR__ . '/resources/views' => resource_path('views/vendor/notes'),
+            ], 'notes-views'
         );
 
         /**
@@ -40,16 +42,16 @@ class SummerNoteServicesProvider extends ServiceProvider
          */
         $this->publishes(
           [
-              __DIR__.'/../node_modules/summernote/dist/' => public_path('assets/summernote')
-          ], 'snote-assets'
+              __DIR__.'/../node_modules/summernote/dist/' => public_path('assets/summernote/')
+          ], 'notes-assets'
         );
 
         /**
          * Package config
          */
         $this->publishes(
-            [__DIR__ . '/App/config/config.php' => config_path('snote.php')],
-            'snote-config'
+            [__DIR__ . '/App/config/config.php' => config_path('notes.php')],
+            'notes-config'
         );
 
 
@@ -57,6 +59,26 @@ class SummerNoteServicesProvider extends ServiceProvider
         if (!$this->app->runningInConsole()) :
             include_once __DIR__ . '/App/Helpers/helper.php';
         endif;
+
+        /**
+         * Directives
+         */
+
+        Blade::directive('summernoteScript', function(){
+            return notesJs();
+        });
+
+        Blade::directive('summernoteStyle', function(){
+            return notesStyle();
+        });
+
+        Blade::directive('summernoteScriptCdn', function(){
+            return notesJsCdn();
+        });
+
+        Blade::directive('summernoteStyleCdn', function(){
+            return notesStyleCdn();
+        });
 
 
     }
@@ -70,7 +92,7 @@ class SummerNoteServicesProvider extends ServiceProvider
     {
 
        $this->mergeConfigFrom(
-            __DIR__ . '/App/config/config.php', 'snote'
+            __DIR__ . '/App/config/config.php', 'notes'
         );
         $this->app->bind(
             'Notes', function () {
