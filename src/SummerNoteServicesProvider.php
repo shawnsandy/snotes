@@ -80,7 +80,6 @@ class SummerNoteServicesProvider extends ServiceProvider
             return notesStyleCdn();
         });
 
-
     }
 
     /**
