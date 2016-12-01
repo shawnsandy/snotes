@@ -1,5 +1,6 @@
 <?php
 
+
     function notesJs(){
         return "<script src=\"".public_path("assets/summernote/summernote.min.js")."\"></script>";
     }
