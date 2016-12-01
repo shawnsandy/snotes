@@ -6,10 +6,20 @@
     "url": "https://github.com/shawnsandy/PkgStart",
     "type": "git"
   },
+  "scripts": {
+    "scss": "node-sass --output-style nested --indent-type space --indent-width 4 -r -o src/App/resources/assets src/App/resources/assets && notify -t 'SCSS Compiled' -m 'Completed' "
+  },
   "author": "shawn sandy",
   "license": "MIT",
   "dependencies": {
+    "bourbon": "^4.2.7",
     "gulp": "^3.9.1",
+    "node-notifier": "^4.6.1",
     "summernote": "^0.8.2"
+  },
+  "devDependencies": {
+    "node-sass": "^3.8.0",
+    "onchange": "^3.0.0",
+    "postcss-cli": "^2.5.2"
   }
 }
