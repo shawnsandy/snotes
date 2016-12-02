@@ -10,7 +10,7 @@
             focus: {{ $notes['focus'] or 'true' }},
             airMode: {{ $notes['airmode'] or 'false' }},
             focus: {{ $notes['focus'] or 'false' }}
-
         });
     });
+
 </script>

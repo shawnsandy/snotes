@@ -14,6 +14,7 @@
   }
   .note-editor.note-frame {
     border: none;
+    background-color: transparent;
   }
 
   .notes-logo-text {
@@ -36,7 +37,7 @@
     }
 
     button {
-      height: 32px;
+      height: 34px;
       background-color: #fff;
       border: 1px solid #9B9B9B;
       color: #9B9B9B;
