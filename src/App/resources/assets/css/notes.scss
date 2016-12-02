@@ -48,6 +48,10 @@
         border-color: #55ADF8;
         color: darken(#55ADF8, 25%);
       }
+
+    }
+    input, .form-control {
+      width: auto;
     }
   }
  input {
