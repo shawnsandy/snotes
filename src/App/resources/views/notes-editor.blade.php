@@ -11,8 +11,6 @@
 
     </textarea>
     <div class="notes-toolbar">
-
-        <button class="col">Upsplash Photos</button>
         <div class="spacer col-fluid"></div>
         <button type="submit" class="col">Save Note</button>
     </div>
