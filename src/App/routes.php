@@ -6,4 +6,7 @@
  * Time: 12:58 PM
  */
 
-Route::resource('/snotes', 'ShawnSandy\Summernote\App\Controllers\NotesController');
+Route::group(['middleware' => ['web']], function () {
+    //  your routes goes here
+    Route::resource('/snotes', 'ShawnSandy\Summernote\App\Controllers\NotesController');
+});
