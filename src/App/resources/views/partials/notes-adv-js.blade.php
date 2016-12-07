@@ -2,6 +2,7 @@
     // php here
 @endphp
 <script>
+
     $(document).ready(function () {
         var el = "{{ $notes['selector'] or ".adv-notes #adv-notes" }}";
         $(el).summernote({
