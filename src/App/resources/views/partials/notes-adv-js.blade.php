@@ -9,7 +9,7 @@
             minHeight: "{{ $notes['min_height'] or '300px' }}",
             focus: {{ $notes['focus'] or 'true' }},
             airMode: {{ $notes['airmode'] or 'false' }},
-            focus: {{ $notes['focus'] or 'false' }}
+            focus: {{ $notes['focus'] or 'true' }}
         });
     });
 
