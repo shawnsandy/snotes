@@ -25,13 +25,23 @@ class Unsplash
         $this->colleciton_id = config('notes.unspalsh_id', '450657');
     }
 
+    /**
+     * Collections info
+     *
+     * @return \Illuminate\Support\Collection
+     */
     public function unsplashCollection()
     {
         $collection = (new Photos\HttpClient())->send("get", ['/collections/'.$this->colleciton_id]);
-        $col = collect(json_decode($collection->getBody(), true));
-        return $col;
+        $collections = collect(json_decode($collection->getBody(), true));
+        return $collections;
     }
 
+    /**
+     * Photos in collection
+     *
+     * @return static
+     */
     public function unsplashCollectionPhotos()
     {
 
