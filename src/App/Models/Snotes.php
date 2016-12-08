@@ -15,4 +15,13 @@ class Snotes extends Model
 {
     protected $fillable = ['notes_title', 'notes_content'];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
+
+
+
 }
