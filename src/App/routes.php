@@ -8,5 +8,6 @@
 
 Route::group(['middleware' => ['web']], function () {
     //  your routes goes here
+    Route::resource('/snotes/new', 'ShawnSandy\Summernote\App\Controllers\NotesController@create');
     Route::resource('/snotes', 'ShawnSandy\Summernote\App\Controllers\NotesController');
 });
