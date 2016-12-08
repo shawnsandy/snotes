@@ -19,10 +19,11 @@ class CreateSnotesTable extends Migration
     {
         Schema::create('snotes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('notes_title', 255)->nullable();
-            $table->text('notes_content')->nullable();
+            $table->integer('user_id')->unsigned();
+            $table->string('notes_title', 255);
+            $table->text('notes_content');
             $table->timestamp('created_at')->nullable();
-            $table->timestamp('undated_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
             $table->softDeletes();
 
         });
