@@ -81,6 +81,8 @@ class SummerNoteServicesProvider extends ServiceProvider
             return notesStyleCdn();
         });
 
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
+
     }
 
     /**
