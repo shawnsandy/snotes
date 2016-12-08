@@ -13,5 +13,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Snotes extends Model
 {
+    protected $fillable = ['notes_title', 'notes_content'];
 
 }
