@@ -21,17 +21,17 @@
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Insert Images</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur eaque esse,
+                        maxime nemo odio rerum? Accusamus aperiam aspernatur autem, consequatur dolorem facere facilis
+                        harum in laborum molestias nesciunt quae quis ratione reprehenderit, sequi. Aperiam culpa earum
+                        nesciunt numquam velit! Ab adipisci corporis deserunt, distinctio dolorem expedita facilis fuga
+                        fugit impedit, itaque minus nihil obcaecati perspiciatis quae sed ullam, voluptates!</p>
                     @each('notes::partials.thumbs', $images, 'img')
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
+
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
