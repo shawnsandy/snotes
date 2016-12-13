@@ -11,13 +11,15 @@ namespace ShawnSandy\Summernote\App\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use ShawnSandy\Summernote\App\Models\Snotes;
 
 class NotesController extends Controller
 {
 
     public function index()
     {
-        return view('notes::index');
+        $notes = Snotes::with('user')->get();
+        return view('notes::index', compact('notes'));
     }
 
     public function show($id)
@@ -32,9 +34,7 @@ class NotesController extends Controller
     }
 
     public function  store(Request $request){
-
         return $request->all();
-
     }
 
 
