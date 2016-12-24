@@ -1,5 +1,5 @@
 @extends('page::page-layouts.default')
-@section('page')
+@section('body')
     @yield('content')
 @endsection
 @push('styles')
