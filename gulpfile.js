@@ -11,7 +11,8 @@ gulp.task('copy:js', function () {
 
 gulp.task('build', function () {
     gulp.src([
-        './node_modules/summernote/dist/**/*.*',
+        './node_modules/font-awesome/css/**/*.*',
+        './node_modules/font-awesome/fonts/**/*.*'
     ], {'base': 'node_modules'})
         .pipe(gulp.dest('src/public/assets/'))
 });

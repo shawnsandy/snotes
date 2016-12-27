@@ -17,6 +17,14 @@ if (!function_exists('notesFontAwesomeCdn')):
     }
 endif;
 
+if (!function_exists('notesFontAwesome')):
+    /*https://www.bootstrapcdn.com/fontawesome/*/
+    function notesFontAwesome()
+    {
+        return "<link href=\"/assets/font-awesome/css/font-awesome.css\" rel=\"stylesheet\">";
+    }
+endif;
+
 if (!function_exists('notesStyle')):
     function notesStyle()
     {
