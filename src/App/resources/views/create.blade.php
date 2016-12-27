@@ -7,4 +7,5 @@
         </div>
     </form>
 @endsection
+@push('scripts')
 
