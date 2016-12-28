@@ -10,7 +10,7 @@ namespace ShawnSandy\Summernote\App\Notes;
 
 
 use App\User;
-use ShawnSandy\Summernote\App\Models\Snotes;
+use ShawnSandy\Summernote\App\Models\Snote;
 
 trait NotesTrait
 {
@@ -21,8 +21,8 @@ trait NotesTrait
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function snotes(){
-        $userNotes = new User;
-        return $userNotes->hasMany(Snotes::class);
+        //$user = new User();
+        return $this->hasMany(Snote::class);
     }
 
 }
