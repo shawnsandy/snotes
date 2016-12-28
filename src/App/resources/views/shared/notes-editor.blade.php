@@ -17,8 +17,9 @@
 
     <textarea name="{{ $notes['selector'] or "notes_content" }}" id="adv-notes" class="notes"></textarea>
     <div class="notes-toolbar">
-        <div class="spacer col-fluid"></div>
         <button type="submit" class="col"><i class="fa fa-file-text" aria-hidden="true"></i> Save Note</button>
+        <div class="spacer col-fluid"></div>
+
     </div>
 
     {{-- modal --}}
@@ -36,7 +37,6 @@
                         fugit impedit, itaque minus nihil obcaecati perspiciatis quae sed ullam, voluptates!</p>
                     @each('notes::partials.thumbs', $images, 'img')
                 </div>
-
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->

@@ -38,7 +38,7 @@ class StoreNotesRequest extends FormRequest
     public function messages()
     {
         return [
-            'snotes_title.required' => 'The title is required and must be 10 + characters',
+            'notes_title.required' => 'The title is required and must be more than 10 characters',
         ];
     }
 }
