@@ -3,6 +3,7 @@
 namespace ShawnSandy\Summernote\App\Notes;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class StoreNotesRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class StoreNotesRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return Auth::check();
     }
 
     /**
@@ -24,8 +25,8 @@ class StoreNotesRequest extends FormRequest
     public function rules()
     {
         return [
-            'snotes_title' => 'required|min:10',
-            'snotes_description' => 'present'
+            'notes_title' => 'required|min:10',
+            'notes_content' => 'present'
         ];
     }
 
