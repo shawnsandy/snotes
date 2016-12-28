@@ -37,11 +37,11 @@ class NotesController extends Controller
     }
 
     public function  store(StoreNotesRequest $request){
-        $id = Auth::id();
-        $user = User::find($id);
-//        $notes = $user->notes()->create($request->all());
         $notes = $request->user()->snotes()->create($request->all());
-        return $notes;
+        if($notes):
+            return back()->with('status', 'Your notes has bee created');
+        endif;
+        return back()->withInput();
     }
 
 
