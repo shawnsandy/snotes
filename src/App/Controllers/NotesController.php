@@ -12,6 +12,7 @@ namespace ShawnSandy\Summernote\App\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use ShawnSandy\Summernote\App\Models\Snotes;
+use ShawnSandy\Summernote\App\Notes\StoreNotesRequest;
 
 class NotesController extends Controller
 {
@@ -33,7 +34,7 @@ class NotesController extends Controller
         return view('notes::create', compact('images'));
     }
 
-    public function  store(Request $request){
+    public function  store(StoreNotesRequest $request){
         return $request->all();
     }
 
