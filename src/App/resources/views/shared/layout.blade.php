@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <title>Notes : A Simple note app based on Summernote for Laravel</title>
+    <meta name="description" content="Summernote for laravel">
+    <meta name="author" content="Shawn Sandy">
     <!-- Latest compiled and minified CSS -->
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,6 +17,15 @@
 </head>
 
 <body>
+<div class="container"  style="padding: 50px 0">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-capitalize" style="color: darkgrey">Notes : A simple note app for Laravel</h1>
+            <hr>
+        </div>
+    </div>
+
+</div>
 @yield('content')
 
 </body>
