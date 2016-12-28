@@ -51,15 +51,19 @@
 
     }
     input, .form-control {
-      width: auto;
+       width: auto;
+
+     }
+  }
+  input {
+    @include placeholder {
+      color: #D8D8D8;
+      font-size: em(13, 16);
+      font-size: 13px;
+    }
+    &.error {
+      border: red 1px solid;
     }
   }
- input {
-   @include placeholder {
-     color: #D8D8D8;
-     font-size: em(13, 16);
-     font-size: 13px;
-   }
- }
 
 }

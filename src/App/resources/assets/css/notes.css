@@ -51,3 +51,5 @@
         color: #D8D8D8;
         font-size: 0.8125em;
         font-size: 13px; }
+    .adv-notes input.error {
+        border: red 1px solid; }
