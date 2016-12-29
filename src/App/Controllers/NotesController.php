@@ -13,7 +13,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Auth;
-use ShawnSandy\Summernote\App\Models\Snotes;
+use ShawnSandy\Summernote\App\Models\Snote;
 use ShawnSandy\Summernote\App\Notes\StoreNotesRequest;
 
 class NotesController extends Controller
@@ -21,7 +21,7 @@ class NotesController extends Controller
 
     public function index()
     {
-        $notes = Snotes::with('user')->get();
+        $notes = Snote::with('user')->get();
         return view('notes::index', compact('notes'));
     }
 

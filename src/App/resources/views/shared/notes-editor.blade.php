@@ -8,7 +8,7 @@
 
     <div class="notes-toolbar">
         <div class="col notes-logo-text text-uppercase">Notes <i class="fa fa-pencil" aria-hidden="true"></i></div>
-        <input name="notes_title" class="col-fluid form-control {{ $errors->first('notes_title', 'error') }}" placeholder="Hi, whats the title of your note? (Enter here)">
+        <input name="notes_title" class="col-fluid form-control {{ $errors->first('notes_title', 'error') }}" placeholder="Hi, what would you like to write about today? (Enter it here)">
         <button class="col" type="button" data-toggle="modal" data-target="#sm-image-library"><i class="fa fa-file-image-o" aria-hidden="true"></i> Images</button>
         @if(function_exists('unsplashSearch'))
             <button class="col"><i class="fa fa-camera" aria-hidden="true"></i> Unsplash Photos</button>
