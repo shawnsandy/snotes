@@ -11,5 +11,4 @@
 
 @summernoteScriptCdn()
 @include('notes::partials.notes-adv-js')
-
 @endpush

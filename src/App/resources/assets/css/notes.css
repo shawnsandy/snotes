@@ -1,3 +1,20 @@
+body {
+    -webkit-font-smoothing: antialiased; }
+
+p {
+    line-height: 1.8;
+    font-size: 18px;
+    font-size: 1.125em; }
+
+header {
+    height: 200px;
+    background-color: lightgrey;
+    color: #fff;
+    margin-bottom: 60px; }
+
+a:link, a:visited {
+    color: lightgrey; }
+
 .adv-notes {
     font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
     padding: 10px;
@@ -53,3 +70,14 @@
         font-size: 13px; }
     .adv-notes input.error {
         border: red 1px solid; }
+
+.collections .a-note {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #FBFBFB;
+    border-bottom: solid 1px #eeeeee; }
+    .collections .a-note .h1, .collections .a-note p {
+        color: #A9A9A9; }
+
+footer {
+    min-height: 100px; }

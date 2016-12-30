@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -17,17 +16,20 @@
 </head>
 
 <body>
-<div class="container"  style="padding: 50px 0">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-capitalize" style="color: darkgrey">Notes : A simple note app for Laravel</h1>
-            <hr>
+<header>
+    <div class="container"  style="padding: 50px 0">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-capitalize">Notes</h1>
+            </div>
         </div>
     </div>
+</header>
 
-</div>
 @yield('content')
+<footer>
 
+</footer>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
