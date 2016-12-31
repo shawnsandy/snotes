@@ -1,9 +1,13 @@
 html {
-    font-size: 16px !important; }
+    font-size: 18px !important; }
 
 body {
     -webkit-font-smoothing: antialiased;
-    font-size: 16px !important; }
+    font-size: 16px !important;
+    background-color: #f5f8f9; }
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3 {
+    margin-top: 0; }
 
 p {
     line-height: 1.7;
@@ -11,10 +15,12 @@ p {
     font-size: 1.0625em; }
 
 header {
-    height: 200px;
-    background-color: lightgrey;
+    height: 300px;
+    background-color: #363636;
     color: #fff;
     margin-bottom: 60px; }
+    header p {
+        color: #e1e1e1; }
 
 a:link, a:visited {
     color: lightgrey; }
@@ -78,13 +84,34 @@ a:hover, a:focus {
     .adv-notes input.error {
         border: red 1px solid; }
 
-.collections .a-note {
-    padding: 20px;
+.collections .a-note, .collections .note {
+    padding: 0 40px;
     margin-bottom: 10px;
-    background-color: #FBFBFB;
-    border-bottom: solid 1px #eeeeee; }
-    .collections .a-note .h1, .collections .a-note p {
+    background-color: #FFFFFF;
+    border: solid 1px #eeeeee; }
+    .collections .a-note .h1, .collections .a-note p, .collections .note .h1, .collections .note p {
         color: #A9A9A9; }
+    .collections .a-note .note-title, .collections .note .note-title {
+        font-size: 42px;
+        font-size: 2.625em; }
+
+.collections .a-note {
+    height: 110px; }
+
+.collections .note {
+    padding: 40px; }
+    .collections .note .note-title {
+        font-size: 60px;
+        font-size: 3.75em; }
+
+.layout {
+    display: table;
+    width: 100%;
+    height: inherit !important; }
+    .layout .layout-center {
+        display: table-cell;
+        vertical-align: middle; }
 
 footer {
-    min-height: 100px; }
+    min-height: 100px;
+    padding: 40px 0 40px; }

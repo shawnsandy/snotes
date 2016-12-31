@@ -1,5 +1,10 @@
 @import "../../../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
-@mixin fontSize($pixels, $base: 16){
+
+$notes-dark: #363636;
+$bg: #f5f8f9;
+$logo-lite: rgba(225, 225, 225, 1.0);
+
+@mixin fontSize($pixels, $base: 16) {
 
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
@@ -12,35 +17,46 @@
   font-size: $pixels / $base * 1em;
 
 }
+
 html {
   font-size: 16px !important;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
   font-size: 16px !important;
+  background-color: $bg;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3 {
+  margin-top: 0;
 }
 
 p {
   line-height: 1.7;
   @include fontSize(17);
 }
+
 header {
-  height: 200px;
-  background-color: lightgrey;
+  height: 300px;
+  background-color: $notes-dark;
   color: #fff;
   margin-bottom: 60px;
+  p {
+    color: $logo-lite;
+  }
 }
- a {
-   &:link, &:visited {
-     color: lightgrey;
-   }
 
-   &:hover, &:focus {
-     text-decoration: none;
-   }
+a {
+  &:link, &:visited {
+    color: lightgrey;
+  }
 
- }
+  &:hover, &:focus {
+    text-decoration: none;
+  }
 
+}
 
 .adv-notes {
 
@@ -93,9 +109,9 @@ header {
 
     }
     input, .form-control {
-       width: auto;
+      width: auto;
 
-     }
+    }
   }
   input {
     @include placeholder {
@@ -111,21 +127,48 @@ header {
 }
 
 .collections {
-  .a-note {
 
-    padding: 20px;
+  .a-note, .note {
+    padding: 0 40px;
     margin-bottom: 10px;
-    background-color: #FBFBFB;
-    border-bottom: solid 1px darken(#FBFBFB, 5%);
+    background-color: #FFFFFF;
+    border: solid 1px darken(#FBFBFB, 5%);
     .h1, p {
       color: #A9A9A9;
     }
 
+    .note-title {
+      @include fontSize(42);
+    }
+
   }
 
+  .a-note {
+    height: 110px;
+  }
 
+  .note {
+    padding: 40px;
+
+    .note-title {
+      @include fontSize(60);
+    }
+  }
 
 }
+
+.layout {
+  display: table;
+  width: 100%;
+  height: inherit !important;
+
+  & .layout-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
 footer {
   min-height: 100px;
+  padding: 40px 0 40px;
 }
