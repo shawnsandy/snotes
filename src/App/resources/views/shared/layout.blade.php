@@ -17,18 +17,31 @@
 
 <body>
 <header>
-    <div class="container"  style="padding: 50px 0">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-capitalize">Notes</h1>
+    <div class="layout">
+        <div class="layout-center">
+            <div class="container"  style="padding: 50px 0">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="text-capitalize">
+                            <img src="/img/notes/notes@1x.png" alt="">
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </header>
 
 @yield('content')
 <footer>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="/img/notes/notes-dark@0.5x.png" alt="Logo footer">
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 

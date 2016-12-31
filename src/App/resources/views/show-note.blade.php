@@ -13,8 +13,8 @@
         </div>
 
         <div class="collections">
-            <div class="a-note">
-                <p class="h1">{{ $note->notes_title }}</p>
+            <div class="note">
+                <p class="note-title">{{ $note->notes_title }}</p>
                 {!! $note->notes_content !!}
             </div>
         </div>
