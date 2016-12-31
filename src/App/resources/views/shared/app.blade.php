@@ -8,7 +8,6 @@
 {!! notesFontAwesome() !!}
 @endpush
 @push('scripts')
-
 @summernoteScriptCdn()
-@include('notes::partials.notes-adv-js')
+@include('notes::partials.smart-notes-js')
 @endpush

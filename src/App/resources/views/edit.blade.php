@@ -19,8 +19,7 @@
                         </span></a>
                 </p>
             </div>
-            @include('notes::shared.notes-editor', ['note' => $note ])
+            @include('notes::shared.smart-editor', ['note' => $note ])
         </div>
     </form>
 @endsection
-@push('scripts')
