@@ -1,0 +1,44 @@
+.smart-editor {
+
+  input, textarea {
+
+    display: block;
+    margin: 0 0 40px;
+    width: 100%;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    padding: 10px 10px 10px 0;
+    border: none;
+    border-bottom: 2px dotted $logo-lite;
+    background-color: transparent;
+    @include placeholder {
+      color: #D8D8D8;
+    }
+  }
+
+  input {
+    font-family: sans-serif;
+    @include fontSize(36);
+    margin-bottom: 80px;
+    color: #A9A9A9;
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+    border: none;
+  }
+
+  .note-editable {
+    border-bottom: 2px dotted $logo-lite;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    color: #A9A9A9;
+  }
+
+  margin-bottom: 80px;
+  padding: 50px;
+  background-color: #fff;
+  border: solid 1px darken(#FBFBFB, 5%);
+
+}

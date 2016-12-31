@@ -11,6 +11,9 @@
                         </span></a>
                 </p>
             </div>
+            <div class="errors">
+                @include('notes::partials.errors')
+            </div>
             @include('notes::shared.smart-editor')
         </div>
     </form>

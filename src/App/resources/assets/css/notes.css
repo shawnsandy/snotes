@@ -1,5 +1,5 @@
 html {
-    font-size: 18px !important; }
+    font-size: 16px !important; }
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -15,7 +15,7 @@ p {
     font-size: 1.0625em; }
 
 header {
-    height: 300px;
+    height: 380px;
     background-color: #363636;
     color: #fff;
     margin-bottom: 60px; }
@@ -23,7 +23,7 @@ header {
         color: #e1e1e1; }
 
 a:link, a:visited {
-    color: lightgrey; }
+    color: #919191; }
 
 a:hover, a:focus {
     text-decoration: none; }
@@ -39,7 +39,8 @@ a:hover, a:focus {
         min-height: 300px; }
     .adv-notes .note-editor.note-frame {
         border: none;
-        background-color: transparent; }
+        background-color: transparent;
+        border-bottom: 1px solid #e1e1e1; }
     .adv-notes .notes-logo-text {
         font-size: 18px;
         color: #D8D8D8; }
@@ -90,10 +91,10 @@ a:hover, a:focus {
     background-color: #FFFFFF;
     border: solid 1px #eeeeee; }
     .collections .a-note .h1, .collections .a-note p, .collections .note .h1, .collections .note p {
-        color: #A9A9A9; }
+        color: #919191; }
     .collections .a-note .note-title, .collections .note .note-title {
-        font-size: 42px;
-        font-size: 2.625em; }
+        font-size: 36px;
+        font-size: 2.25em; }
 
 .collections .a-note {
     height: 110px; }
@@ -115,3 +116,42 @@ a:hover, a:focus {
 footer {
     min-height: 100px;
     padding: 40px 0 40px; }
+
+.smart-editor {
+    margin-bottom: 80px;
+    padding: 50px;
+    background-color: #fff;
+    border: solid 1px #eeeeee; }
+    .smart-editor input, .smart-editor textarea {
+        display: block;
+        margin: 0 0 40px;
+        width: 100%;
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+        padding: 10px 10px 10px 0;
+        border: none;
+        border-bottom: 2px dotted #e1e1e1;
+        background-color: transparent; }
+        .smart-editor input::-webkit-input-placeholder, .smart-editor textarea::-webkit-input-placeholder {
+            color: #D8D8D8; }
+        .smart-editor input::-moz-placeholder, .smart-editor textarea::-moz-placeholder {
+            color: #D8D8D8; }
+        .smart-editor input:-moz-placeholder, .smart-editor textarea:-moz-placeholder {
+            color: #D8D8D8; }
+        .smart-editor input:-ms-input-placeholder, .smart-editor textarea:-ms-input-placeholder {
+            color: #D8D8D8; }
+    .smart-editor input {
+        font-family: sans-serif;
+        font-size: 36px;
+        font-size: 2.25em;
+        margin-bottom: 80px;
+        color: #A9A9A9; }
+    .smart-editor input[type="text"]:focus {
+        outline: none;
+        border: none; }
+    .smart-editor .note-editable {
+        border-bottom: 2px dotted #e1e1e1;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        color: #A9A9A9; }

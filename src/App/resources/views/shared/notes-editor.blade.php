@@ -2,9 +2,6 @@
     //php here
 @endphp
 
-@if($errors->has('notes_title'))
-    <p class="alert alert-danger"> <i class="fa fa-times-circle" aria-hidden="true"></i> {{ $errors->first('notes_title') }}</p>
-@endif
 
 <div class="adv-notes">
 
