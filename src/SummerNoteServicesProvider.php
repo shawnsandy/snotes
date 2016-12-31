@@ -45,6 +45,7 @@ class SummerNoteServicesProvider extends ServiceProvider
               __DIR__.'./../node_modules/summernote/dist/' => public_path('assets/summernote/'),
               __DIR__.'./App/resources/assets/css/' => public_path('assets/notes/css/'),
               __DIR__.'./public/assets/' => public_path('assets/'),
+              __DIR__.'./public/img/' => public_path('img/notes/'),
           ], 'snotes-assets'
         );
 
