@@ -41,21 +41,31 @@ class NotesController extends Controller
     public function  store(StoreNotesRequest $request){
         $notes = $request->user()->snotes()->create($request->all());
         if($notes):
-            return back()->with('status', 'Your notes has been created');
+            return back()->with('success', 'Your notes has been created');
         endif;
-        return back()->withInput();
+        return back()->withInput()->with('error', 'Sorry failed to create note');
     }
 
 
     public function edit($id){
-
+        $note = Snote::find($id);
+        $images = [];
+        return view('notes::edit', compact('note', 'images'));
     }
 
-    public function update(Request $request, $id)  {
+    public function update(StoreNotesRequest $request, $id)  {
+
+        $note = Snote::find($id);
+        $note->update($request->all());
+        if(!$note):
+            return back()->withInput()->with('error', 'Opps it seems like the update failed');
+        endif;
+        return back()->with('success', 'Your note has been saved');
 
     }
 
     public function destroy($id){
+
 
     }
 
