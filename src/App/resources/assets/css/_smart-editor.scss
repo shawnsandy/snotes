@@ -17,7 +17,7 @@
     }
   }
 
-  input {
+  input[type="text"] {
     font-family: sans-serif;
     @include fontSize(36);
     margin-bottom: 80px;
