@@ -155,5 +155,11 @@ a {
 footer {
   min-height: 100px;
   padding: 40px 0 40px;
+
+  .attributions {
+    color: $logo-lite;
+    margin: 10px 0;
+  }
+
 }
 

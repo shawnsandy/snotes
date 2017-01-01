@@ -6,7 +6,7 @@
     <div class="smart-editor">
         <p>
             <input type="text" name="notes_title" class="col-fluid {{ $errors->first('notes_title', 'error') }}"
-                   placeholder="What the title of this note?"
+                   placeholder="* What the title of this note?"
                    value="{{ old('notes_title', (isset($note->notes_title) ? $note->notes_title : '')) }}">
         </p>
         <p class="smart-edit">

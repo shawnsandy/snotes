@@ -103,3 +103,6 @@ a:hover, a:focus {
 footer {
     min-height: 100px;
     padding: 40px 0 40px; }
+    footer .attributions {
+        color: #e1e1e1;
+        margin: 10px 0; }

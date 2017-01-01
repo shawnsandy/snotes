@@ -39,7 +39,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                <p><img src="/img/notes/notes-dark@0.5x.png" alt="Logo footer"></p>
-                <p class="small">Powered by LaravelPhp and Summertnote</p>
+                <p class="small attributions">Powered by LaravelPhp and Summertnote</p>
             </div>
         </div>
     </div>
