@@ -6,7 +6,7 @@
     $(document).ready(function () {
         var el = "{{ $notes['selector'] or "#adv-notes" }}";
         $(el).summernote({
-            placeholder: 'What is this note About?',
+            placeholder: 'Now add some details here...',
             minHeight: "{{ $notes['min_height'] or '300px' }}",
             focus: {{ $notes['focus'] or 'true' }},
             airMode: true,
