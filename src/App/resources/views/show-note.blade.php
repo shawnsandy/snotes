@@ -15,7 +15,7 @@
         <div class="collections">
             <div class="note">
                 <p class="note-title">{{ $note->notes_title }}</p>
-                {!! clean($note->notes_content) !!}
+                {!! $note->notes_content !!}
             </div>
         </div>
     </div>
