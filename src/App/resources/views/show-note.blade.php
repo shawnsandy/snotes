@@ -1,4 +1,5 @@
 @extends('notes::shared.app')
+
 @section('content')
     <div id="notes" class="container">
         <div class="text-right">
@@ -19,4 +20,5 @@
             </div>
         </div>
     </div>
+
     @endsection

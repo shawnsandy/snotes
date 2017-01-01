@@ -1,22 +1,6 @@
 @import "../../../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
-
-$notes-dark: #363636;
-$bg: #f5f8f9;
-$logo-lite: rgba(225, 225, 225, 1.0);
-
-@mixin fontSize($pixels, $base: 16) {
-
-  @if (unitless($pixels)) {
-    $pixels: $pixels * 1px;
-  }
-
-  @if (unitless($base)) {
-    $base: $base * 1px;
-  }
-  font-size: $pixels;
-  font-size: $pixels / $base * 1em;
-
-}
+@import "variables";
+@import "mixins";
 
 html {
   font-size: 16px !important;
@@ -70,11 +54,7 @@ a {
     width: 100%;
     min-height: 300px;
   }
-  .note-editor.note-frame {
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid $logo-lite;
-  }
+
 
   .notes-logo-text {
     font-size: 18px;
@@ -114,20 +94,8 @@ a {
 
     }
   }
-  input {
-    @include placeholder {
-      color: #D8D8D8;
-      font-size: em(13, 16);
-      font-size: 13px;
-    }
-    &.error {
-      border: red 1px solid;
-    }
-  }
 
 }
-
-
 
 .collections {
 
@@ -181,7 +149,7 @@ a {
   .layout-flex-fluid {
     flex-grow: 1;
   }
-  
+
 }
 
 footer {
@@ -189,4 +157,3 @@ footer {
   padding: 40px 0 40px;
 }
 
-@import "smart-editor";

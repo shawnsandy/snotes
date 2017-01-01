@@ -1,0 +1,45 @@
+.smart-editor {
+    font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
+    padding: 50px;
+    background-color: #fff;
+    border: solid 1px #eeeeee; }
+    .smart-editor .note-editor.note-frame {
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #e1e1e1; }
+    .smart-editor .note-editable {
+        border-bottom: 2px dotted #e1e1e1;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        color: #A9A9A9; }
+    .smart-editor input, .smart-editor textarea {
+        display: block;
+        margin: 0 0 40px;
+        width: 100%;
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+        padding: 10px 10px 10px 0;
+        border: none;
+        border-bottom: 2px dotted #e1e1e1;
+        background-color: transparent; }
+        .smart-editor input::-webkit-input-placeholder, .smart-editor textarea::-webkit-input-placeholder {
+            color: #D8D8D8; }
+        .smart-editor input::-moz-placeholder, .smart-editor textarea::-moz-placeholder {
+            color: #D8D8D8; }
+        .smart-editor input:-moz-placeholder, .smart-editor textarea:-moz-placeholder {
+            color: #D8D8D8; }
+        .smart-editor input:-ms-input-placeholder, .smart-editor textarea:-ms-input-placeholder {
+            color: #D8D8D8; }
+    .smart-editor input[type="text"] {
+        font-family: sans-serif;
+        font-size: 36px;
+        font-size: 2.25em;
+        margin-bottom: 80px;
+        color: #A9A9A9; }
+        .smart-editor input[type="text"].error {
+            border: red 1px solid; }
+    .smart-editor input[type="text"]:focus {
+        outline: none;
+        border: none; }

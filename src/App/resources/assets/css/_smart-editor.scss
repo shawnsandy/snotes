@@ -1,5 +1,18 @@
 .smart-editor {
 
+  .note-editor.note-frame {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $logo-lite;
+  }
+
+  .note-editable {
+    border-bottom: 2px dotted $logo-lite;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    color: #A9A9A9;
+  }
+
   input, textarea {
 
     display: block;
@@ -22,6 +35,9 @@
     @include fontSize(36);
     margin-bottom: 80px;
     color: #A9A9A9;
+    &.error {
+      border: red 1px solid;
+    }
   }
 
   input[type="text"]:focus {
@@ -29,13 +45,11 @@
     border: none;
   }
 
-  .note-editable {
-    border-bottom: 2px dotted $logo-lite;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-    color: #A9A9A9;
+  button {
+
   }
 
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   margin-bottom: 80px;
   padding: 50px;
   background-color: #fff;

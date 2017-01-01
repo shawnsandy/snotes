@@ -1,8 +1,8 @@
 @php
     //php here
 @endphp
-<div class="note">
 
+<div class="note">
     <div class="smart-editor">
         <p>
             <input type="text" name="notes_title" class="col-fluid {{ $errors->first('notes_title', 'error') }}"
@@ -14,9 +14,11 @@
         </p>
         <button class="btn btn-lg btn-primary" type="submit">Save Note</button>
     </div>
-
 </div>
 
+@push('styles')
+<link rel="stylesheet" href="/assets/notes/css/note-editor.css">
+@endpush
 
 @push('scripts')
 @include('notes::partials.smart-notes-js')

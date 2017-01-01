@@ -37,10 +37,6 @@ a:hover, a:focus {
     .adv-notes #adv-notes {
         width: 100%;
         min-height: 300px; }
-    .adv-notes .note-editor.note-frame {
-        border: none;
-        background-color: transparent;
-        border-bottom: 1px solid #e1e1e1; }
     .adv-notes .notes-logo-text {
         font-size: 18px;
         color: #D8D8D8; }
@@ -66,24 +62,6 @@ a:hover, a:focus {
                 color: #086ec5; }
         .adv-notes .notes-toolbar input, .adv-notes .notes-toolbar .form-control {
             width: auto; }
-    .adv-notes input::-webkit-input-placeholder {
-        color: #D8D8D8;
-        font-size: 0.8125em;
-        font-size: 13px; }
-    .adv-notes input::-moz-placeholder {
-        color: #D8D8D8;
-        font-size: 0.8125em;
-        font-size: 13px; }
-    .adv-notes input:-moz-placeholder {
-        color: #D8D8D8;
-        font-size: 0.8125em;
-        font-size: 13px; }
-    .adv-notes input:-ms-input-placeholder {
-        color: #D8D8D8;
-        font-size: 0.8125em;
-        font-size: 13px; }
-    .adv-notes input.error {
-        border: red 1px solid; }
 
 .collections .a-note, .collections .note {
     padding: 0 40px;
@@ -116,45 +94,12 @@ a:hover, a:focus {
         display: table-cell;
         vertical-align: middle; }
 
+.layout-flex {
+    display: flex;
+    align-items: center; }
+    .layout-flex .layout-flex-fluid {
+        flex-grow: 1; }
+
 footer {
     min-height: 100px;
     padding: 40px 0 40px; }
-
-.smart-editor {
-    margin-bottom: 80px;
-    padding: 50px;
-    background-color: #fff;
-    border: solid 1px #eeeeee; }
-    .smart-editor input, .smart-editor textarea {
-        display: block;
-        margin: 0 0 40px;
-        width: 100%;
-        appearance: none;
-        box-shadow: none;
-        border-radius: none;
-        padding: 10px 10px 10px 0;
-        border: none;
-        border-bottom: 2px dotted #e1e1e1;
-        background-color: transparent; }
-        .smart-editor input::-webkit-input-placeholder, .smart-editor textarea::-webkit-input-placeholder {
-            color: #D8D8D8; }
-        .smart-editor input::-moz-placeholder, .smart-editor textarea::-moz-placeholder {
-            color: #D8D8D8; }
-        .smart-editor input:-moz-placeholder, .smart-editor textarea:-moz-placeholder {
-            color: #D8D8D8; }
-        .smart-editor input:-ms-input-placeholder, .smart-editor textarea:-ms-input-placeholder {
-            color: #D8D8D8; }
-    .smart-editor input[type="text"] {
-        font-family: sans-serif;
-        font-size: 36px;
-        font-size: 2.25em;
-        margin-bottom: 80px;
-        color: #A9A9A9; }
-    .smart-editor input[type="text"]:focus {
-        outline: none;
-        border: none; }
-    .smart-editor .note-editable {
-        border-bottom: 2px dotted #e1e1e1;
-        padding-bottom: 50px;
-        margin-bottom: 50px;
-        color: #A9A9A9; }
