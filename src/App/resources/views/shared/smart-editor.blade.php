@@ -3,7 +3,7 @@
 @endphp
 
 <div class="note">
-    <div class="smart-editor">
+    <div class="smart-editor" data-notes-editor="#adv-notes" data-notes-img-btn=".insert-img">
         <p>
             <input type="text" name="notes_title" class="col-fluid {{ $errors->first('notes_title', 'error') }}"
                    placeholder="* What the title of this note?"
