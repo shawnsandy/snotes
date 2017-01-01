@@ -23,16 +23,22 @@ gulp.task('build', function () {
         './node_modules/font-awesome/css/**/*.*',
         './node_modules/font-awesome/fonts/**/*.*'
     ], {'base': 'node_modules'})
-        .pipe(gulp.dest('src/public/assets/'))
+        .pipe(gulp.dest('./src/public/assets/'))
 });
 
 gulp.task('sass', function () {
-    return gulp.src('./src/resources/assets/css/**/*.scss', {'base': './src/resources/assets/'})
+    return gulp.src('./src/App/resources/assets/css/**/*.scss', {'base': './src/App/resources/assets/css/'})
         .pipe(sass().on('error', notify.onError('Error processing')))
-        .pipe(gulp.dest('./src/resources/assets'))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('src/App/resources/assets/css/'))
+        .pipe(notify({
+            title: "Pages Notification",
+            message: "SCSS files compiled, enjoy",
+            onLast: true
+        }))
 
 });
 
 gulp.task('watch:sass', function () {
-    gulp.watch('./src/resources/assets/css/**/*.scss', ['sass']);
+    gulp.watch('./src/App/resources/assets/css/**/*.scss', ['sass']);
 });
