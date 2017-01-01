@@ -30,10 +30,7 @@ a:hover, a:focus {
 
 .adv-notes {
     font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-    padding: 10px;
-    background-color: #F5F5F5;
-    border-radius: 3px;
-    border: 1px solid gainsboro; }
+    padding: 10px; }
     .adv-notes #adv-notes {
         width: 100%;
         min-height: 300px; }
@@ -104,5 +101,5 @@ footer {
     min-height: 100px;
     padding: 40px 0 40px; }
     footer .attributions {
-        color: #e1e1e1;
+        color: lightgray;
         margin: 10px 0; }

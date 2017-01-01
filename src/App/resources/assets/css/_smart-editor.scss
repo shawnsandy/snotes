@@ -37,6 +37,7 @@
     color: #A9A9A9;
     &.error {
       border: red 1px solid;
+      padding-left: 10px;
     }
   }
 
@@ -46,9 +47,17 @@
   }
 
   button {
-    border-radius: 0;
+    border-radius: 4px;
+    border: 2px;
+
     &.save-btn {
       padding: 10px 20px;
+      background-color: $bg-dark;
+      @include linear-gradient($bg-dark, darken($bg-dark, 10%));
+      color: $logo-lite;
+      &:hover {
+        background-color: lighten($bg-dark, 20%);
+      }
     }
   }
 
@@ -56,6 +65,7 @@
   margin-bottom: 80px;
   padding: 50px;
   background-color: #fff;
-  border: solid 1px darken(#FBFBFB, 5%);
+  @include border-radius(4px);
+  border: 1px solid darken(#F5F5F5, 10%);
 
 }

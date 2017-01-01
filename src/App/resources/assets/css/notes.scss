@@ -46,10 +46,6 @@ a {
 
   font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   padding: 10px;
-  background-color: #F5F5F5;
-  border-radius: 3px;
-  border: 1px solid darken(#F5F5F5, 10%);
-
   #adv-notes {
     width: 100%;
     min-height: 300px;
@@ -157,9 +153,8 @@ footer {
   padding: 40px 0 40px;
 
   .attributions {
-    color: $logo-lite;
+    color: lightgray;
     margin: 10px 0;
   }
 
 }
-
