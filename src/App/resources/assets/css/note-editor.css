@@ -43,3 +43,7 @@
     .smart-editor input[type="text"]:focus {
         outline: none;
         border: none; }
+    .smart-editor button {
+        border-radius: 0; }
+        .smart-editor button.save-btn {
+            padding: 10px 20px; }

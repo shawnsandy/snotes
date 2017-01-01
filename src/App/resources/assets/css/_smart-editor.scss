@@ -46,7 +46,10 @@
   }
 
   button {
-
+    border-radius: 0;
+    &.save-btn {
+      padding: 10px 20px;
+    }
   }
 
   font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
