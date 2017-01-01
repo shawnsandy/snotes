@@ -50,13 +50,14 @@
         border: none; }
     .smart-editor button {
         border-radius: 4px;
-        border: 2px; }
-        .smart-editor button.save-btn {
+        border: none;
+        background-color: transparent; }
+        .smart-editor button.save-btn, .smart-editor button .btn {
             padding: 10px 20px;
             background-color: #363636;
             background-color: #363636;
             background-image: -webkit-linear-gradient(#363636, #1d1d1d);
             background-image: linear-gradient(#363636, #1d1d1d);
             color: #e1e1e1; }
-            .smart-editor button.save-btn:hover {
+            .smart-editor button.save-btn:hover, .smart-editor button .btn:hover {
                 background-color: dimgray; }

@@ -9,5 +9,4 @@
 @endpush
 @push('scripts')
 @summernoteScriptCdn()
-@include('notes::partials.smart-notes-js')
 @endpush
