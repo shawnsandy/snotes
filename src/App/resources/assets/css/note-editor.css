@@ -1,63 +1,85 @@
 .smart-editor {
-    font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-    margin-bottom: 80px;
-    padding: 50px;
-    background-color: #fff;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */
-    border: 1px solid gainsboro; }
-    .smart-editor .note-editor.note-frame {
-        border: none;
-        background-color: transparent;
-        border-bottom: 1px solid #e1e1e1; }
-    .smart-editor .note-editable {
-        border-bottom: 2px dotted #e1e1e1;
-        padding-bottom: 50px;
-        margin-bottom: 50px;
-        color: #A9A9A9; }
-    .smart-editor input, .smart-editor textarea {
-        display: block;
-        margin: 0 0 40px;
-        width: 100%;
-        appearance: none;
-        box-shadow: none;
-        border-radius: none;
-        padding: 10px 10px 10px 0;
-        border: none;
-        border-bottom: 2px dotted #e1e1e1;
-        background-color: transparent; }
-        .smart-editor input::-webkit-input-placeholder, .smart-editor textarea::-webkit-input-placeholder {
-            color: #D8D8D8; }
-        .smart-editor input::-moz-placeholder, .smart-editor textarea::-moz-placeholder {
-            color: #D8D8D8; }
-        .smart-editor input:-moz-placeholder, .smart-editor textarea:-moz-placeholder {
-            color: #D8D8D8; }
-        .smart-editor input:-ms-input-placeholder, .smart-editor textarea:-ms-input-placeholder {
-            color: #D8D8D8; }
-    .smart-editor input[type="text"] {
-        font-family: sans-serif;
-        font-size: 36px;
-        font-size: 2.25em;
-        margin-bottom: 80px;
-        color: #A9A9A9; }
-        .smart-editor input[type="text"].error {
-            border: red 1px solid;
-            padding-left: 10px; }
-    .smart-editor input[type="text"]:focus {
-        outline: none;
-        border: none; }
-    .smart-editor button {
-        border-radius: 4px;
-        border: none;
-        background-color: transparent; }
-        .smart-editor button.save-btn, .smart-editor button .btn {
-            padding: 10px 20px;
-            background-color: #363636;
-            background-color: #363636;
-            background-image: -webkit-linear-gradient(#363636, #1d1d1d);
-            background-image: linear-gradient(#363636, #1d1d1d);
-            color: #e1e1e1; }
-            .smart-editor button.save-btn:hover, .smart-editor button .btn:hover {
-                background-color: dimgray; }
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  margin-bottom: 80px;
+  padding: 50px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: 1px solid gainsboro; }
+
+.smart-editor .note-editor.note-frame {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #e1e1e1; }
+
+.smart-editor .note-editable {
+  border-bottom: 2px dotted #e1e1e1;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  color: #A9A9A9; }
+
+.smart-editor input, .smart-editor textarea {
+  display: block;
+  margin: 0 0 40px;
+  width: 100%;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  padding: 10px 10px 10px 0;
+  border: none;
+  border-bottom: 2px dotted #e1e1e1;
+  background-color: transparent; }
+
+.smart-editor input::-webkit-input-placeholder, .smart-editor textarea::-webkit-input-placeholder {
+  color: #D8D8D8; }
+
+.smart-editor input::-moz-placeholder, .smart-editor textarea::-moz-placeholder {
+  color: #D8D8D8; }
+
+.smart-editor input:-moz-placeholder, .smart-editor textarea:-moz-placeholder {
+  color: #D8D8D8; }
+
+.smart-editor input:-ms-input-placeholder, .smart-editor textarea:-ms-input-placeholder {
+  color: #D8D8D8; }
+
+.smart-editor input[type="text"] {
+  font-family: sans-serif;
+  font-size: 36px;
+  font-size: 2.25em;
+  margin-bottom: 80px;
+  color: #A9A9A9; }
+
+.smart-editor input[type="text"].error {
+  border: red 1px solid;
+  padding-left: 10px; }
+
+.smart-editor input[type="text"]:focus {
+  outline: none;
+  border: none; }
+
+.smart-editor button {
+  border-radius: 4px;
+  border: none;
+  background-color: transparent; }
+
+.smart-editor button.save-btn, .smart-editor button .btn {
+  padding: 10px 20px;
+  background-color: #363636;
+  background-color: #363636;
+  background-image: -webkit-linear-gradient(#363636, #1d1d1d);
+  background-image: linear-gradient(#363636, #1d1d1d);
+  color: #e1e1e1; }
+
+.smart-editor button.save-btn:hover, .smart-editor button .btn:hover {
+  background-color: dimgray; }
+
+.smart-editor .editor-toolbar {
+  padding: 20px 0;
+  border-bottom: 2px solid #e1e1e1;
+  margin-bottom: 20px; }
+
+.smart-editor .editor-toolbar i {
+  font-size: 32px;
+  font-size: 2em; }
