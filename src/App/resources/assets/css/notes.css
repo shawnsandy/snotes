@@ -93,11 +93,14 @@ a:hover, a:focus {
     .collections .a-note .h1, .collections .a-note p, .collections .note .h1, .collections .note p {
         color: #919191; }
     .collections .a-note .note-title, .collections .note .note-title {
-        font-size: 36px;
-        font-size: 2.25em; }
+        font-size: 28px;
+        font-size: 1.75em; }
+        .collections .a-note .note-title i, .collections .note .note-title i {
+            font-size: 32px;
+            font-size: 2em; }
 
 .collections .a-note {
-    height: 110px; }
+    height: 90px; }
 
 .collections .note {
     padding: 40px; }
@@ -141,7 +144,7 @@ footer {
             color: #D8D8D8; }
         .smart-editor input:-ms-input-placeholder, .smart-editor textarea:-ms-input-placeholder {
             color: #D8D8D8; }
-    .smart-editor input {
+    .smart-editor input[type="text"] {
         font-family: sans-serif;
         font-size: 36px;
         font-size: 2.25em;

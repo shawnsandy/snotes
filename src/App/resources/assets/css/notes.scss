@@ -141,13 +141,16 @@ a {
     }
 
     .note-title {
-      @include fontSize(36);
+      @include fontSize(28);
+      i {
+        @include fontSize(32)
+      }
     }
 
   }
 
   .a-note {
-    height: 110px;
+    height: 90px;
   }
 
   .note {
@@ -169,6 +172,16 @@ a {
     display: table-cell;
     vertical-align: middle;
   }
+}
+
+.layout-flex {
+  display: flex;
+  align-items: center;
+
+  .layout-flex-fluid {
+    flex-grow: 1;
+  }
+  
 }
 
 footer {
