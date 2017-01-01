@@ -5,12 +5,12 @@
 
     <div class="smart-editor">
         <p>
-            <input name="notes_title" class="col-fluid {{ $errors->first('notes_title', 'error') }}"
-                   placeholder="Add the title of the Note here.."
+            <input type="text" name="notes_title" class="col-fluid {{ $errors->first('notes_title', 'error') }}"
+                   placeholder="What the title of this note?"
                    value="{{ old('notes_title', (isset($note->notes_title) ? $note->notes_title : '')) }}">
         </p>
         <p class="smart-edit">
-     <textarea name="{{ $notes['selector'] or "notes_content" }}" id="adv-notes" class="notes">{{ old('notes_content', (isset($note->notes_content) ? $note->notes_content : '')) }}</textarea>
+     <textarea name="{{ $notes['selector'] or "notes_content" }}" id="adv-notes" class="notes">{!!  old('notes_content', (isset($note->notes_content) ? $note->notes_content : '')) !!}</textarea>
         </p>
         <button class="btn btn-lg btn-primary" type="submit">Save Note</button>
     </div>
