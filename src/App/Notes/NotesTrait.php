@@ -20,7 +20,6 @@ trait NotesTrait
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function snotes(){
-
         return $this->hasMany(Snote::class);
     }
 
