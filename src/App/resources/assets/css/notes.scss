@@ -1,0 +1,177 @@
+@import "../../../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "variables";
+@import "mixins";
+
+html {
+  font-size: 16px !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px !important;
+  background-color: $bg;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.7;
+  @include fontSize(17);
+}
+
+header {
+  height: 380px;
+  background-color: $notes-dark;
+  color: #fff;
+  margin-bottom: 60px;
+  p {
+    color: $logo-lite;
+  }
+}
+
+a {
+  &:link, &:visited {
+    color: #919191;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+}
+
+#notes .nav {
+  margin: 40px 0;
+  .btn {
+    @include border-radius(20px);
+    border-width: 2px;
+    color: #919191;
+
+    i {
+      @include fontSize(18)
+    }
+  }
+}
+
+.adv-notes {
+
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  padding: 10px;
+  #adv-notes {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .notes-logo-text {
+    font-size: 18px;
+    color: #D8D8D8;
+  }
+
+  .notes-toolbar {
+    padding: 5px;
+    display: flex;
+    min-height: 36px;
+    align-items: center;
+
+    .col {
+      margin: 0 10px;
+    }
+
+    .col-fluid {
+      flex-grow: 2;
+    }
+
+    button {
+      height: 34px;
+      background-color: #fff;
+      border: 1px solid #9B9B9B;
+      color: #9B9B9B;
+      font-size: 13px;
+      margin: 0 5px;
+      padding: 0 12px;
+      &:hover {
+        border-color: #55ADF8;
+        color: darken(#55ADF8, 25%);
+      }
+
+    }
+    input, .form-control {
+      width: auto;
+
+    }
+  }
+
+}
+
+.collections {
+
+  .a-note, .note {
+    padding: 0 40px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border: solid 1px darken(#FBFBFB, 5%);
+    .h1, p {
+      color: #919191;
+    }
+
+    .note-title {
+      @include fontSize(28);
+      i {
+        @include fontSize(24)
+      }
+    }
+
+  }
+
+  .a-note {
+    height: 90px;
+  }
+
+  .note {
+    padding: 40px;
+
+    .note-title {
+      @include fontSize(60);
+    }
+  }
+
+}
+
+.layout {
+  display: table;
+  width: 100%;
+  height: inherit !important;
+
+  & .layout-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.layout-flex {
+  display: flex;
+  align-items: center;
+
+  .layout-flex-fluid {
+    flex-grow: 1;
+  }
+
+}
+
+.confirm-trash {
+  display: none;
+  color: red;
+}
+
+footer {
+  min-height: 100px;
+  padding: 40px 0 40px;
+
+  .attributions {
+    color: lightgray;
+    margin: 10px 0;
+  }
+
+}

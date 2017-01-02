@@ -27,7 +27,7 @@ class PkgStartServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // TODO: Implement register() method.
+
     }
 
 

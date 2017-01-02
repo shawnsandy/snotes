@@ -1,0 +1,95 @@
+.smart-editor {
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  margin-bottom: 80px;
+  padding: 50px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: 1px solid gainsboro; }
+
+.smart-editor .note-editor.note-frame {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #e1e1e1; }
+
+.smart-editor .note-editable {
+  border-bottom: 2px dotted #e1e1e1;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  color: #A9A9A9; }
+
+.smart-editor input, .smart-editor textarea {
+  display: block;
+  margin: 0 0 40px;
+  width: 100%;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 10px 10px 10px 0;
+  border: none;
+  border-bottom: 2px dotted #e1e1e1;
+  background-color: transparent; }
+
+.smart-editor input::-webkit-input-placeholder, .smart-editor textarea::-webkit-input-placeholder {
+  color: #D8D8D8; }
+
+.smart-editor input::-moz-placeholder, .smart-editor textarea::-moz-placeholder {
+  color: #D8D8D8; }
+
+.smart-editor input:-moz-placeholder, .smart-editor textarea:-moz-placeholder {
+  color: #D8D8D8; }
+
+.smart-editor input:-ms-input-placeholder, .smart-editor textarea:-ms-input-placeholder {
+  color: #D8D8D8; }
+
+.smart-editor input[type="text"] {
+  font-family: sans-serif;
+  font-size: 36px;
+  font-size: 2.25em;
+  margin-bottom: 80px;
+  color: #A9A9A9; }
+
+.smart-editor input[type="text"].error {
+  border: red 1px solid;
+  padding-left: 10px; }
+
+.smart-editor input[type="text"]:focus {
+  outline: none;
+  border: none; }
+
+.smart-editor button {
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px; }
+
+.smart-editor button.save-btn, .smart-editor button .btn {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  background-color: #363636;
+  color: #e1e1e1;
+  font-size: 18px;
+  font-size: 1.125em; }
+
+.smart-editor button.save-btn:hover, .smart-editor button .btn:hover {
+  background-color: dimgray; }
+
+.smart-editor button.btn-icons {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  font-size: 12px;
+  font-size: 0.75em; }
+
+.smart-editor button.btn-icons i {
+  font-size: 18px;
+  font-size: 1.125em;
+  color: #363636; }
+
+.smart-editor .editor-toolbar {
+  padding: 20px 0;
+  margin-bottom: 20px; }

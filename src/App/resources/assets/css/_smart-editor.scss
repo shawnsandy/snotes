@@ -1,0 +1,91 @@
+.smart-editor {
+
+  .note-editor.note-frame {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $logo-lite;
+  }
+
+  .note-editable {
+    border-bottom: 2px dotted $logo-lite;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    color: #A9A9A9;
+  }
+
+  input, textarea {
+
+    display: block;
+    margin: 0 0 40px;
+    width: 100%;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 10px 10px 0;
+    border: none;
+    border-bottom: 2px dotted $logo-lite;
+    background-color: transparent;
+    @include placeholder {
+      color: #D8D8D8;
+    }
+  }
+
+  input[type="text"] {
+    font-family: sans-serif;
+    @include fontSize(36);
+    margin-bottom: 80px;
+    color: #A9A9A9;
+    &.error {
+      border: red 1px solid;
+      padding-left: 10px;
+    }
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+    border: none;
+  }
+
+  button {
+    border-radius: 4px;
+    border: none;
+    //background-color: transparent;
+    padding: 10px 20px;
+
+    &.save-btn, .btn {
+      @include border-radius(30px);
+      background-color: $bg-dark;
+      //@include linear-gradient($bg-dark, darken($bg-dark, 10%));
+      color: $logo-lite;
+      @include fontSize(18);
+      &:hover {
+        background-color: lighten($bg-dark, 20%);
+      }
+    }
+
+    &.btn-icons {
+      @include border-radius(20px);
+      @include fontSize(12);
+      i {
+        @include fontSize(18);
+        color: $bg-dark;
+      }
+
+    }
+
+  }
+
+  .editor-toolbar {
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+  }
+
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  margin-bottom: 80px;
+  padding: 50px;
+  background-color: #fff;
+  @include border-radius(4px);
+  border: 1px solid darken(#F5F5F5, 10%);
+
+}

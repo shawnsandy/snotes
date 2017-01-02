@@ -1,0 +1,140 @@
+html {
+  font-size: 16px !important; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px !important;
+  background-color: #f5f8f9; }
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3 {
+  margin-top: 0; }
+
+p {
+  line-height: 1.7;
+  font-size: 17px;
+  font-size: 1.0625em; }
+
+header {
+  height: 380px;
+  background-color: #363636;
+  color: #fff;
+  margin-bottom: 60px; }
+
+header p {
+  color: #e1e1e1; }
+
+a:link, a:visited {
+  color: #919191; }
+
+a:hover, a:focus {
+  text-decoration: none; }
+
+#notes .nav {
+  margin: 40px 0; }
+
+#notes .nav .btn {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border-width: 2px;
+  color: #919191; }
+
+#notes .nav .btn i {
+  font-size: 18px;
+  font-size: 1.125em; }
+
+.adv-notes {
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  padding: 10px; }
+
+.adv-notes #adv-notes {
+  width: 100%;
+  min-height: 300px; }
+
+.adv-notes .notes-logo-text {
+  font-size: 18px;
+  color: #D8D8D8; }
+
+.adv-notes .notes-toolbar {
+  padding: 5px;
+  display: flex;
+  min-height: 36px;
+  align-items: center; }
+
+.adv-notes .notes-toolbar .col {
+  margin: 0 10px; }
+
+.adv-notes .notes-toolbar .col-fluid {
+  flex-grow: 2; }
+
+.adv-notes .notes-toolbar button {
+  height: 34px;
+  background-color: #fff;
+  border: 1px solid #9B9B9B;
+  color: #9B9B9B;
+  font-size: 13px;
+  margin: 0 5px;
+  padding: 0 12px; }
+
+.adv-notes .notes-toolbar button:hover {
+  border-color: #55ADF8;
+  color: #086ec5; }
+
+.adv-notes .notes-toolbar input, .adv-notes .notes-toolbar .form-control {
+  width: auto; }
+
+.collections .a-note, .collections .note {
+  padding: 0 40px;
+  margin-bottom: 10px;
+  background-color: #FFFFFF;
+  border: solid 1px #eeeeee; }
+
+.collections .a-note .h1, .collections .a-note p, .collections .note .h1, .collections .note p {
+  color: #919191; }
+
+.collections .a-note .note-title, .collections .note .note-title {
+  font-size: 28px;
+  font-size: 1.75em; }
+
+.collections .a-note .note-title i, .collections .note .note-title i {
+  font-size: 24px;
+  font-size: 1.5em; }
+
+.collections .a-note {
+  height: 90px; }
+
+.collections .note {
+  padding: 40px; }
+
+.collections .note .note-title {
+  font-size: 60px;
+  font-size: 3.75em; }
+
+.layout {
+  display: table;
+  width: 100%;
+  height: inherit !important; }
+
+.layout .layout-center {
+  display: table-cell;
+  vertical-align: middle; }
+
+.layout-flex {
+  display: flex;
+  align-items: center; }
+
+.layout-flex .layout-flex-fluid {
+  flex-grow: 1; }
+
+.confirm-trash {
+  display: none;
+  color: red; }
+
+footer {
+  min-height: 100px;
+  padding: 40px 0 40px; }
+
+footer .attributions {
+  color: lightgray;
+  margin: 10px 0; }
