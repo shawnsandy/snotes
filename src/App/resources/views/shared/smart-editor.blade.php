@@ -9,13 +9,22 @@
                    placeholder="* What the title of this note?"
                    value="{{ old('notes_title', (isset($note->notes_title) ? $note->notes_title : '')) }}">
         </p>
-        <p>
-            <button id="insertImg" class="insert-img btn" type="button">Images</button>
-        </p>
+
         <p class="smart-edit">
-     <textarea name="{{ $notes['selector'] or "notes_content" }}" id="adv-notes" class="notes">{!!  old('notes_content', (isset($note->notes_content) ? $note->notes_content : '')) !!}</textarea>
+            <textarea name="{{ $notes['selector'] or "notes_content" }}" id="adv-notes"
+                      class="notes">{!!  old('notes_content', (isset($note->notes_content) ? $note->notes_content : '')) !!}</textarea>
         </p>
-        <button class="save-btn" type="submit">Save Note</button>
+        <div class="editor-toolbar">
+            <p>
+                <button id="insertImg" class="insert-img btn-icons" type="button">
+                    <i class="fa fa-camera" aria-hidden="true"></i> Insert Photos
+                </button>
+            </p>
+        </div>
+        <div class="text-right">
+            <button class="save-btn" type="submit">Save Note</button>
+        </div>
+
     </div>
 </div>
 
@@ -24,5 +33,6 @@
 @endpush
 
 @push('scripts')
-@include('notes::partials.smart-notes-js')
+{{--@include('notes::partials.smart-notes-js')--}}
+<script src="/assets/notes/js/smart-notes.js"></script>
 @endpush
