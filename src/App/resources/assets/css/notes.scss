@@ -44,6 +44,14 @@ a {
 
 #notes .nav {
   margin: 40px 0;
+  .btn {
+    @include border-radius(20px);
+    border-width: 2px;
+
+    i {
+      @include fontSize(18)
+    }
+  }
 }
 
 .adv-notes {
@@ -110,7 +118,7 @@ a {
     .note-title {
       @include fontSize(28);
       i {
-        @include fontSize(32)
+        @include fontSize(24)
       }
     }
 

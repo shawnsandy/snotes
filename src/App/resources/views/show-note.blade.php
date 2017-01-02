@@ -4,11 +4,11 @@
     <div id="notes" class="container">
         <div class="text-right nav">
             <p>
-                <a href="/snotes" class="btn btn-link">
-                    <span class="h1">   <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  </span>
+                <a href="/snotes" class="btn btn-default">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i> Notes
                 </a>
-                <a href="/snotes/{{ $note->id }}/edit" class="btn btn-link">
-                    <span class="h1">   <i class="fa fa-pencil-square" aria-hidden="true"></i> </span>
+                <a href="/snotes/{{ $note->id }}/edit" class="btn btn-default">
+                     <i class="fa fa-pencil" aria-hidden="true"></i> Edit
                 </a>
             </p>
         </div>

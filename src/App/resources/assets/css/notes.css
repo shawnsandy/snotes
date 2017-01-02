@@ -32,6 +32,17 @@ a:hover, a:focus {
 #notes .nav {
   margin: 40px 0; }
 
+#notes .nav .btn {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border-width: 2px; }
+
+#notes .nav .btn i {
+  font-size: 18px;
+  font-size: 1.125em; }
+
 .adv-notes {
   font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   padding: 10px; }
@@ -86,8 +97,8 @@ a:hover, a:focus {
   font-size: 1.75em; }
 
 .collections .a-note .note-title i, .collections .note .note-title i {
-  font-size: 32px;
-  font-size: 2em; }
+  font-size: 24px;
+  font-size: 1.5em; }
 
 .collections .a-note {
   height: 90px; }

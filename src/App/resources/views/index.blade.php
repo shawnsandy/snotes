@@ -3,10 +3,9 @@
     <div id="notes" class="container">
         <div class="text-right nav">
             <p>
-                <a href="/snotes/new" class="btn btn-link">
-                    <span class="h1">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                </span>
+                <a href="/snotes/new" class="btn btn-default">
+                        <i class="fa fa-plus" aria-hidden="true"></i> New Note
+                </a>
             </p>
         </div>
 
