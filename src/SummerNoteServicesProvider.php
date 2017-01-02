@@ -10,7 +10,7 @@ use ShawnSandy\Summernote\App\Notes\Notes;
 /**
  * Class Provider
  *
- * @package ShawnSandy\PkgStart
+ * @package ShawnSandy\Summernote
  */
 class SummerNoteServicesProvider extends ServiceProvider
 {

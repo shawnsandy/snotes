@@ -1,10 +1,11 @@
 {
-    "name": "shawnsandy/snotes",
+    "name": "shawnsandy/summernote",
     "type": "library",
-    "description": "Start Kit for laravel packages",
+    "description": "A summernote package for laravel",
     "keywords": [
         "ShawnSandy",
-        "PkgStart"
+        "Summernote",
+        "Laravel"
     ],
     "homepage": "https://github.com/ShawnSandy/PkgStart",
     "license": "MIT",
@@ -28,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ShawnSandy\\PkgStart\\": "src"
+            "ShawnSandy\\Summernote\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShawnSandy\\PkgStart\\": "tests"
+            "ShawnSandy\\Summernote\\": "tests"
         }
     },
     "scripts": {

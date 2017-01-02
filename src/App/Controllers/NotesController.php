@@ -8,11 +8,7 @@
 
 namespace ShawnSandy\Summernote\App\Controllers;
 
-
-use App\User;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Auth;
 use ShawnSandy\Summernote\App\Models\Snote;
 use ShawnSandy\Summernote\App\Notes\StoreNotesRequest;
 
