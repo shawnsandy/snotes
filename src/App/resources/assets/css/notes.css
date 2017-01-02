@@ -37,7 +37,8 @@ a:hover, a:focus {
   border-radius: 20px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  border-width: 2px; }
+  border-width: 2px;
+  color: #919191; }
 
 #notes .nav .btn i {
   font-size: 18px;

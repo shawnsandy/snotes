@@ -47,6 +47,7 @@ a {
   .btn {
     @include border-radius(20px);
     border-width: 2px;
+    color: #919191;
 
     i {
       @include fontSize(18)

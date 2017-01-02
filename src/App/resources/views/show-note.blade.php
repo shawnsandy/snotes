@@ -2,15 +2,14 @@
 
 @section('content')
     <div id="notes" class="container">
+
         <div class="text-right nav">
-            <p>
                 <a href="/snotes" class="btn btn-default">
                     <i class="fa fa-chevron-left" aria-hidden="true"></i> Notes
                 </a>
                 <a href="/snotes/{{ $note->id }}/edit" class="btn btn-default">
                      <i class="fa fa-pencil" aria-hidden="true"></i> Edit
                 </a>
-            </p>
         </div>
 
         <div class="collections">
@@ -19,6 +18,7 @@
                 {!! $note->notes_content !!}
             </div>
         </div>
+
     </div>
 
     @endsection

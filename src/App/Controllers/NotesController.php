@@ -64,7 +64,12 @@ class NotesController extends Controller
     }
 
     public function destroy($id){
+        $note = Snote::find($id);
+        $note->delete();
+        if($note->trashed())
+            return redirect('/snotes')->with('success', 'Your note has bee moved to the trash');
 
+        return redirect('/snotes/'.$id.'/edit')->with('error', 'Sorry you note was note deleted');
 
     }
 
