@@ -62,6 +62,5 @@ class Unsplash
         });
 
         return $images;
-    }
-
+    }c
 }
