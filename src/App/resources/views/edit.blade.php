@@ -1,12 +1,6 @@
 @extends('notes::shared.app')
 @section('content')
-    <div class="container">
-        @if(session('success'))
-            <p class="alert alert-success">
-                {{ session('success') }}
-            </p>
-        @endif
-    </div>
+
     <form action="/snotes/{{ $note->id }}" method="post">
         {{ method_field('PUT') }}
         {{ csrf_field() }}
@@ -17,7 +11,11 @@
                 </a>
                 @include('notes::partials.delete-btn', ['id' => $note->id])
             </div>
+            <div class="errors">
+                @include('notes::partials.errors')
+            </div>
             @include('notes::shared.smart-editor', ['note' => $note ])
         </div>
+
     </form>
 @endsection
