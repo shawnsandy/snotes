@@ -3,12 +3,12 @@
     <form action="/snotes" method="POST">
         {{ csrf_field() }}
         <div id="notes" class="container">
-            <div class="text-right">
+            <div class="text-right nav">
                 <p>
-                    <a href="/snotes" class="btn btn-link btn-lg">
-                        <span class="h1">
-                            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
-                        </span></a>
+                    <a href="/snotes" class="btn btn-default">
+
+                            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Notes
+
                 </p>
             </div>
             <div class="errors">

@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="notes" class="container">
-        <div class="text-right">
+        <div class="text-right nav">
             <p>
                 <a href="/snotes" class="btn btn-link">
                     <span class="h1">   <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  </span>

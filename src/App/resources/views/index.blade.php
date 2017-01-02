@@ -1,7 +1,7 @@
 @extends('notes::shared.app')
 @section('content')
     <div id="notes" class="container">
-        <div class="text-right">
+        <div class="text-right nav">
             <p>
                 <a href="/snotes/new" class="btn btn-link">
                     <span class="h1">
