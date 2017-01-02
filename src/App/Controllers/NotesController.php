@@ -29,7 +29,6 @@ class NotesController extends Controller
     {
         $note = Snote::with('user')->where('id', $id)->first();
         return view('notes::show-note', compact('note'));
-
     }
 
     public function create()
@@ -41,7 +40,7 @@ class NotesController extends Controller
     public function  store(StoreNotesRequest $request){
         $notes = $request->user()->snotes()->create($request->all());
         if($notes):
-            return back()->with('success', 'Your notes has been created');
+            return redirect('/snotes/'.$notes->id.'/edit')->with('success', 'Your notes has been created, you can continue editing');
         endif;
         return back()->withInput()->with('error', 'Sorry failed to create note');
     }
