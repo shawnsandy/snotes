@@ -127,6 +127,10 @@ a:hover, a:focus {
 .layout-flex .layout-flex-fluid {
   flex-grow: 1; }
 
+.confirm-trash {
+  display: none;
+  color: red; }
+
 footer {
   min-height: 100px;
   padding: 40px 0 40px; }
