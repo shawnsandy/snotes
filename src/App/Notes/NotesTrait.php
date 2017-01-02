@@ -9,7 +9,6 @@
 namespace ShawnSandy\Summernote\App\Notes;
 
 
-use App\User;
 use ShawnSandy\Summernote\App\Models\Snote;
 
 trait NotesTrait
