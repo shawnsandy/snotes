@@ -22,8 +22,10 @@ $ composer require shawnsandy/summernote
 
 ## Usage
 
+
+Add to the 
 ``` php
-///
+ 
 ```
 
 ## Change log
