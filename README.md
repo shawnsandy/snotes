@@ -23,10 +23,24 @@ $ composer require shawnsandy/summernote
 ## Usage
 
 
-Add to the 
+Add to following to you `config\app.php`
+
 ``` php
+
+ShawnSandy\Summernote\SummerNoteServicesProvider::class
  
 ```
+
+### Quick Setup
+
+- Pulbish the assets 
+
+``` bash 
+php artisan vendor:publish --tag=snotes-assets
+```
+
+- Go to http://yoursite.com/snotes
+
 
 ## Change log
 
