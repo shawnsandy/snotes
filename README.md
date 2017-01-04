@@ -1,5 +1,7 @@
 # summernote
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/a1a12aa0-0eb5-4a65-828a-dfce0c47037d/big.png)](https://insight.sensiolabs.com/projects/a1a12aa0-0eb5-4a65-828a-dfce0c47037d)
+
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1d5a9c928f2c4ddd90f67ef15685ea1c)](https://www.codacy.com/app/shawnsandy04/snotes?utm_source=github.com&utm_medium=referral&utm_content=shawnsandy/snotes&utm_campaign=badger)
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
