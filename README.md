@@ -33,10 +33,25 @@ ShawnSandy\Summernote\SummerNoteServicesProvider::class
 
 ### Quick Setup
 
-- Pulbish the assets 
+- Publish the package assets 
 
 ``` bash 
 php artisan vendor:publish --tag=snotes-assets
+```
+
+- Open your `App/User.php` and add NotesTrait you can find out more on traits here 
+
+```php
+
+use ShawnSandy\Summernote\App\Notes\NotesTrait;
+
+class User extends Authenticatable
+{
+
+    use NotesTrait;
+
+}
+
 ```
 
 - Go to http://yoursite.com/snotes
