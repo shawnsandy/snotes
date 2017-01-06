@@ -121,6 +121,9 @@ a {
       i {
         @include fontSize(24)
       }
+      .direction {
+        color: $logo-lite;
+      }
     }
 
   }

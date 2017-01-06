@@ -101,6 +101,9 @@ a:hover, a:focus {
   font-size: 24px;
   font-size: 1.5em; }
 
+.collections .a-note .note-title .direction, .collections .note .note-title .direction {
+  color: #e1e1e1; }
+
 .collections .a-note {
   height: 90px; }
 
