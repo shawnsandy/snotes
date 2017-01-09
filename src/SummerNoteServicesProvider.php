@@ -5,6 +5,7 @@ namespace ShawnSandy\Summernote;
 use Blade;
 use Illuminate\Support\ServiceProvider;
 use ShawnSandy\Summernote\App\Notes\Notes;
+use Storage;
 
 
 /**
@@ -104,5 +105,16 @@ class SummerNoteServicesProvider extends ServiceProvider
                 return new Notes();
             }
         );
+
+        $this->app->singleton('League\Glide\Server', function ($app) {
+            $storageDriver = Storage::getDriver();
+
+            return ServerFactory::create([
+                'source' => $storageDriver,
+                'cache' => $storageDriver,
+                'cache_path_prefix' => '.cache',
+                'base_url' => '/img/'
+            ]);
+        });
     }
 }
