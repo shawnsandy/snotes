@@ -106,15 +106,5 @@ class SummerNoteServicesProvider extends ServiceProvider
             }
         );
 
-        $this->app->singleton('League\Glide\Server', function ($app) {
-            $storageDriver = Storage::getDriver();
-
-            return ServerFactory::create([
-                'source' => $storageDriver,
-                'cache' => $storageDriver,
-                'cache_path_prefix' => '.cache',
-                'base_url' => '/img/'
-            ]);
-        });
     }
 }
