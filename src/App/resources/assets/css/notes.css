@@ -131,6 +131,9 @@ a:hover, a:focus {
 .layout-flex .layout-flex-fluid {
   flex-grow: 1; }
 
+.notes-insert-img {
+  padding: 40px; }
+
 .confirm-trash {
   display: none;
   color: red; }

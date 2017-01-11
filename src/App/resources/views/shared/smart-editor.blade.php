@@ -16,11 +16,13 @@
         </p>
         <div class="editor-toolbar">
             <p>
-                <button id="insertImg" class="insert-img btn-icons" type="button">
+                <button id="insertImg" class="insert-img btn-icons" type="button" data-toggle="modal"
+                        data-target="#img-modal">
                     <i class="fa fa-camera" aria-hidden="true"></i> Insert Photos
                 </button>
             </p>
         </div>
+
         <div class="text-right">
             <button class="save-btn" type="submit">Save Note</button>
         </div>
@@ -28,9 +30,7 @@
     </div>
 </div>
 
-<div class="images">
-    @each('notes::partials.images', $images, 'img')
-</div>
+@include('notes::partials.image-manager')
 
 @push('styles')
 <link rel="stylesheet" href="/assets/notes/css/note-editor.css">
