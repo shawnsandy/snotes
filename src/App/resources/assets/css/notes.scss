@@ -44,6 +44,7 @@ a {
 
 #notes .nav {
   margin: 40px 0;
+  height:40px;
   .btn {
     @include border-radius(20px);
     border-width: 2px;
