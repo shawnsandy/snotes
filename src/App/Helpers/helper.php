@@ -62,18 +62,7 @@
          */
         function notesGetFiles($allowed = array(), $disk = "notes")
         {
-            $img = collect(Storage::disk($disk)->files('images'));
 
-            if (empty($allowed))
-                $allowed = ['jpg', 'jpeg', 'png', 'gif', 'svg'];
-
-            $images = $img->filter(function ($item, $key) use ($allowed) {
-                $ext = pathinfo($item, PATHINFO_EXTENSION);
-
-                return in_array($ext, $allowed);
-            });
-
-            return $images;
         }
 
     endif;

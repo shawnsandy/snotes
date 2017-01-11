@@ -29,7 +29,8 @@ class NotesController extends Controller
 
     public function create()
     {
-        $images = [];
+        $img = app('Notes');
+        $images = $img->getFiles();
         return view('notes::create', compact('images'));
     }
 
