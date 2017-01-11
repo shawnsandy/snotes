@@ -10,10 +10,18 @@ namespace ShawnSandy\Summernote\App\Controllers;
 
 use Illuminate\Routing\Controller;
 use ShawnSandy\Summernote\App\Models\Snote;
+use ShawnSandy\Summernote\App\Notes\Notes;
 use ShawnSandy\Summernote\App\Notes\StoreNotesRequest;
 
 class NotesController extends Controller
 {
+
+    protected $img;
+
+    public function __construct(Notes $notes)
+    {
+        $this->img = $notes;
+    }
 
     public function index()
     {
@@ -29,8 +37,8 @@ class NotesController extends Controller
 
     public function create()
     {
-        $img = app('Notes');
-        $images = $img->getFiles([], 'local');
+
+        $images = $this->img->getFiles([], 'local');
         return view('notes::create', compact('images'));
     }
 
@@ -44,9 +52,11 @@ class NotesController extends Controller
 
 
     public function edit($id){
+
         $note = Snote::find($id);
-        $images = [];
+        $images = $images = $this->img->getFiles([], 'local');
         return view('notes::edit', compact('note', 'images'));
+
     }
 
     public function update(StoreNotesRequest $request, $id)  {
