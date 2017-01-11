@@ -13,7 +13,7 @@ use Storage;
  *
  * @package ShawnSandy\Summernote
  */
-class SummerNoteServicesProvider extends ServiceProvider
+class NotesServicesProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
