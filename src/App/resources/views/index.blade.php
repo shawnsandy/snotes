@@ -3,7 +3,7 @@
     <div id="notes" class="container">
         <div class="text-right nav">
             <p>
-                <a href="/snotes/new" class="btn btn-default">
+                <a href="/notes/new" class="btn btn-default">
                         <i class="fa fa-plus" aria-hidden="true"></i> New Note
                 </a>
             </p>

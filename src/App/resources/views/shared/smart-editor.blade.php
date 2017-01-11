@@ -28,6 +28,10 @@
     </div>
 </div>
 
+<div class="images">
+    @each('notes::partials.images', $images, 'img')
+</div>
+
 @push('styles')
 <link rel="stylesheet" href="/assets/notes/css/note-editor.css">
 @endpush
