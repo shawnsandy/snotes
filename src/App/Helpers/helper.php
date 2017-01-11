@@ -1,5 +1,9 @@
 <?php
 
+    use Illuminate\Filesystem\Filesystem;
+    use League\Glide\Responses\LaravelResponseFactory;
+    use League\Glide\ServerFactory;
+
     if (!function_exists('notesJS')):
         function notesJs()
         {
@@ -77,21 +81,27 @@
 
     if (!function_exists('notesResizeImage')):
 
+
         /**
          * @param $photo
          * @param array $params
          * @param string $storage
+         * @return mixed
          */
-        function notesResizeImage($photo, $params = [], $storage = 'img/')
+    function notesResizeImage($photo, $params = [], $storage = 'img/')
         {
+            $filesystem = new Filesystem();
 
-            $server = League\Glide\ServerFactory::create([
-                'source' => $storage,
-                'cache' => $storage,
-                'cache_path_prefix' => '.cache',
+            $server = ServerFactory::create([
+                'response' => new LaravelResponseFactory(app('request')),
+                'source' => $filesystem->getDriver(), // I want Rackspace here
+                'cache' => $filesystem->getDriver(), // I want Rackspace here
+                'source_path_prefix' => 'images',
+                'cache_path_prefix' => 'images/.cache',
+                'base_url' => 'photos'
             ]);
 
-           $server->outputImage($photo, $params);
+            return $server->getImageResponse($path, request()->all());
         }
 
     endif;
