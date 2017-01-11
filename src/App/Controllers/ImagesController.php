@@ -23,8 +23,8 @@
                 'response' => new LaravelResponseFactory(app('request')),
                 'source' => $filesystem->getDriver(), // I want Rackspace here
                 'cache' => $filesystem->getDriver(), // I want Rackspace here
-                'source_path_prefix' => 'images',
-                'cache_path_prefix' => 'images/.cache',
+                'source_path_prefix' => '/',
+                'cache_path_prefix' => '/.cache',
                 'base_url' => 'photos'
             ]);
 
