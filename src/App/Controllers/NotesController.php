@@ -30,7 +30,7 @@ class NotesController extends Controller
     public function create()
     {
         $img = app('Notes');
-        $images = $img->getFiles();
+        $images = $img->getFiles([], 'local');
         return view('notes::create', compact('images'));
     }
 
