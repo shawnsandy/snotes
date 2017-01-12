@@ -2,7 +2,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                close
+               <button class="btn btn-default"><i class="fa fa-camera" aria-hidden="true"></i> Browse Photos</button>
             </div>
             <div class="modal-body">
                 <div class="notes-insert-img text-center">
