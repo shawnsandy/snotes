@@ -10,7 +10,7 @@
             </div>
             <div class="layout-center">
                 <div class="text-capitalize text-left">
-                    <a href="" class="note-title">
+                    <a href="/notes/{{$notes->id}}" class="note-title">
                       {{ $notes->notes_title }}
                     </a>
                 </div>

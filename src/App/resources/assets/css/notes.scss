@@ -55,6 +55,7 @@ a {
     @include border-radius(20px);
     border-width: 2px;
     color: #919191;
+    @include transition(all 2.0s ease-in-out);
 
     i {
       @include fontSize(18)

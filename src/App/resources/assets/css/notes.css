@@ -45,7 +45,10 @@ a:hover i, a:focus i {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   border-width: 2px;
-  color: #919191; }
+  color: #919191;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
 
 #notes .nav .btn i {
   font-size: 18px;
