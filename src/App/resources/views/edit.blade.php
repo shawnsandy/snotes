@@ -7,7 +7,7 @@
         {{ csrf_field() }}
         <div id="notes" class="container">
             <div class="text-right nav">
-                <a href="/notes" class="btn btn-default">
+                <a href="/notes" class="btn btn-default nav-btn">
                     <i class="fa fa-chevron-left" aria-hidden="true"></i> Notes
                 </a>
                 @include('notes::partials.delete-btn',['id' => $note->id])
