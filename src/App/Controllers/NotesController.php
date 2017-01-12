@@ -25,7 +25,7 @@
 
         public function index()
         {
-            $notes = Snote::with('user')->orderBy('id', 'DESC')->get();
+            $notes = Snote::latest()->get();
 
             return view('notes::index', compact('notes'));
         }
