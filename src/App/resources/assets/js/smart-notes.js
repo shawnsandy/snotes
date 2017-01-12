@@ -18,13 +18,11 @@ $(document).ready(function () {
         });
 
         $(".add-image").each(function () {
-            console.log("found");
             $(this).click(function (e) {
                 e.preventDefault();
                 var src = $(this).data("src");
-                console.log(src);
                 $(editor).summernote("insertImage", src);
-                $('#img-modal').modal("hide");
+                $("#img-modal").modal("hide");
             })
         });
 
