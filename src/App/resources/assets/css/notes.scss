@@ -34,16 +34,23 @@ header {
 a {
   &:link, &:visited {
     color: #919191;
+    i {
+      color: darken($logo-lite, 5%);
+    }
   }
 
   &:hover, &:focus {
     text-decoration: none;
+    i {
+      color: darken($logo-lite, 30%);
+    }
   }
 
 }
 
 #notes .nav {
   margin: 40px 0;
+  height:40px;
   .btn {
     @include border-radius(20px);
     border-width: 2px;
@@ -54,6 +61,8 @@ a {
     }
   }
 }
+
+
 
 .adv-notes {
 
@@ -112,28 +121,33 @@ a {
     margin-bottom: 10px;
     background-color: #FFFFFF;
     border: solid 1px darken(#FBFBFB, 5%);
+    @include border-radius(7px);
     .h1, p {
       color: #919191;
     }
 
     .note-title {
-      @include fontSize(28);
+      @include fontSize(36);
       i {
         @include fontSize(24)
+      }
+      .direction {
+        color: $logo-lite;
       }
     }
 
   }
 
   .a-note {
-    height: 90px;
+    height: 110px;
   }
 
   .note {
     padding: 40px;
 
     .note-title {
-      @include fontSize(60);
+      @include fontSize(62);
+
     }
   }
 
@@ -156,6 +170,35 @@ a {
 
   .layout-flex-fluid {
     flex-grow: 1;
+  }
+
+}
+
+
+.notes-insert-img {
+  padding: 40px;
+}
+
+#img-modal {
+  img {
+    padding: 7px;
+    box-sizing: border-box;
+    background-color: $logo-lite;
+  }
+
+  p {
+    @include fontSize(12)
+  }
+
+  .modal-body {
+    height: 600px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .btn {
+    margin-top: 5px;
+    @include border-radius(20px);
   }
 
 }

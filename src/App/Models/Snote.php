@@ -26,6 +26,14 @@ class Snote extends Model
      */
     protected $dates = ['deleted_at'];
 
+    public function scopeLatest($query){
+       return $query->with('user')->orderBy('id', 'DESC');
+    }
+
+    public function scopeTitle($query){
+       return $query->with('user')->orderBy('notes_title', 'ASC');
+    }
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

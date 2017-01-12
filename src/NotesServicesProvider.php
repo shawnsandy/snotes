@@ -5,6 +5,7 @@ namespace ShawnSandy\Summernote;
 use Blade;
 use Illuminate\Support\ServiceProvider;
 use ShawnSandy\Summernote\App\Notes\Notes;
+use Storage;
 
 
 /**
@@ -12,7 +13,7 @@ use ShawnSandy\Summernote\App\Notes\Notes;
  *
  * @package ShawnSandy\Summernote
  */
-class SummerNoteServicesProvider extends ServiceProvider
+class NotesServicesProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -47,7 +48,7 @@ class SummerNoteServicesProvider extends ServiceProvider
               __DIR__.'./App/resources/assets/js/' => public_path('assets/notes/js/'),
               __DIR__.'./public/assets/' => public_path('assets/'),
               __DIR__.'./public/img/' => public_path('img/notes/'),
-          ], 'snotes-assets'
+          ], 'notes-assets'
         );
 
         /**
@@ -55,7 +56,7 @@ class SummerNoteServicesProvider extends ServiceProvider
          */
         $this->publishes(
             [__DIR__ . '/App/config/config.php' => config_path('notes.php')],
-            'snotes-config'
+            'notes-config'
         );
 
 
@@ -104,5 +105,6 @@ class SummerNoteServicesProvider extends ServiceProvider
                 return new Notes();
             }
         );
+
     }
 }
