@@ -34,10 +34,16 @@ header {
 a {
   &:link, &:visited {
     color: #919191;
+    i {
+      color: darken($logo-lite, 5%);
+    }
   }
 
   &:hover, &:focus {
     text-decoration: none;
+    i {
+      color: darken($logo-lite, 30%);
+    }
   }
 
 }
@@ -115,12 +121,13 @@ a {
     margin-bottom: 10px;
     background-color: #FFFFFF;
     border: solid 1px darken(#FBFBFB, 5%);
+    @include border-radius(7px)
     .h1, p {
       color: #919191;
     }
 
     .note-title {
-      @include fontSize(28);
+      @include fontSize(36);
       i {
         @include fontSize(24)
       }
@@ -132,14 +139,15 @@ a {
   }
 
   .a-note {
-    height: 90px;
+    height: 110px;
   }
 
   .note {
     padding: 40px;
 
     .note-title {
-      @include fontSize(60);
+      @include fontSize(62);
+
     }
   }
 
@@ -171,6 +179,28 @@ a {
   padding: 40px;
 }
 
+#img-modal {
+  img {
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  p {
+    @include fontSize(12)
+  }
+
+  .modal-body {
+    height: 600px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .btn {
+    margin-top: 5px;
+    @include border-radius(20px);
+  }
+
+}
 
 .confirm-trash {
   display: none;

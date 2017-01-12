@@ -26,8 +26,14 @@ header p {
 a:link, a:visited {
   color: #919191; }
 
+a:link i, a:visited i {
+  color: #d4d4d4; }
+
 a:hover, a:focus {
   text-decoration: none; }
+
+a:hover i, a:focus i {
+  color: #959595; }
 
 #notes .nav {
   margin: 40px 0;
@@ -89,14 +95,18 @@ a:hover, a:focus {
   padding: 0 40px;
   margin-bottom: 10px;
   background-color: #FFFFFF;
-  border: solid 1px #eeeeee; }
+  border: solid 1px #eeeeee;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
 
 .collections .a-note .h1, .collections .a-note p, .collections .note .h1, .collections .note p {
   color: #919191; }
 
 .collections .a-note .note-title, .collections .note .note-title {
-  font-size: 28px;
-  font-size: 1.75em; }
+  font-size: 36px;
+  font-size: 2.25em; }
 
 .collections .a-note .note-title i, .collections .note .note-title i {
   font-size: 24px;
@@ -106,14 +116,14 @@ a:hover, a:focus {
   color: #e1e1e1; }
 
 .collections .a-note {
-  height: 90px; }
+  height: 110px; }
 
 .collections .note {
   padding: 40px; }
 
 .collections .note .note-title {
-  font-size: 60px;
-  font-size: 3.75em; }
+  font-size: 62px;
+  font-size: 3.875em; }
 
 .layout {
   display: table;
@@ -133,6 +143,26 @@ a:hover, a:focus {
 
 .notes-insert-img {
   padding: 40px; }
+
+#img-modal img {
+  padding: 5px;
+  box-sizing: border-box; }
+
+#img-modal p {
+  font-size: 12px;
+  font-size: 0.75em; }
+
+#img-modal .modal-body {
+  height: 600px;
+  overflow: hidden;
+  overflow-y: auto; }
+
+#img-modal .btn {
+  margin-top: 5px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
 
 .confirm-trash {
   display: none;

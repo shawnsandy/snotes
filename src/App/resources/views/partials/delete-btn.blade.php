@@ -8,20 +8,18 @@
 ?>
 
 
-    <button  class="btn btn-default delete trash" type="button"><i class="fa fa-trash" aria-hidden="true"></i> Move to trash</button>
-    <a href="/notes/trash/{{$id}}" class="btn btn-default confirm-trash"><i class="fa fa-times" aria-hidden="true"></i> Continue to trash</a>
-    <button  class="btn btn-default delete confirm-trash trash" type="button"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+<button class="btn btn-default delete trash" type="button"><i class="fa fa-trash" aria-hidden="true"></i> Move to trash
+</button>
+<a href="/notes/trash/{{$id}}" class="btn btn-default confirm-trash"><i class="fa fa-trash" aria-hidden="true"></i>
+    Continue to trash</a>
+<button class="btn btn-default delete confirm-trash trash" type="button"><i class="fa fa-times" aria-hidden="true"></i>
+    Cancel
+</button>
 
 @push('scripts')
 <script>
-    $(document).ready(function(){
-        var trash = $(this).find('.trash');
-        var buttons = $(this).find('.btn');
-        $(trash).click(function(e){
-            e.preventDefault();
-             buttons.slideToggle('slow');
-            console.log('trash clicked')
-        })
+    $(document).ready(function () {
+
     });
 </script>
 @endpush

@@ -90,6 +90,9 @@
   font-size: 1.125em;
   color: #363636; }
 
+.smart-editor button.btn-icons:hover, .smart-editor button.btn-icons:focus {
+  outline: none; }
+
 .smart-editor .editor-toolbar {
   padding: 20px 0;
   margin-bottom: 20px; }
