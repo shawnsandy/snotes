@@ -33,7 +33,6 @@ $(document).ready(function () {
     $(trash).click(function (e) {
         e.preventDefault();
         buttons.toggle();
-        //console.log('trash clicked')
     })
 
 

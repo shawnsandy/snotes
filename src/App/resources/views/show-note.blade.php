@@ -1,5 +1,5 @@
 @extends('notes::shared.app')
-
+@section('title', 'Reading - '.$note->notes_title )
 @section('content')
     <div id="notes" class="container">
 

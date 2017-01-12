@@ -1,4 +1,5 @@
 @extends('notes::shared.app')
+@section('title', 'Create a new Note')
 @section('content')
     <form action="/notes" method="POST">
         {{ csrf_field() }}

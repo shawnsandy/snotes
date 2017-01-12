@@ -1,4 +1,5 @@
 @extends('notes::shared.app')
+@section('title', 'Edit Note')
 @section('content')
 
     <form action="/notes/{{ $note->id }}" method="post">

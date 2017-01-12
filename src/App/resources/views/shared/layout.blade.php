@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Notes : A Simple note app based on Summernote for Laravel</title>
+    <title>Notes @yield('title') </title>
     <meta name="description" content="Summernote for laravel">
     <meta name="author" content="Shawn Sandy">
     <!-- Latest compiled and minified CSS -->
