@@ -1,13 +1,11 @@
 <div class="col-md-12">
     <div class="a-note">
         <div class="layout">
-
             <div class="layout-center" style="width: 100px">
                 <div>
                     <a href="/notes/{{$notes->id}}" class="note-title">
                         <i class="fa fa-circle-o"></i>
                     </a>
-
                 </div>
             </div>
             <div class="layout-center">
