@@ -7,7 +7,7 @@
 
             <div class="text-right nav">
                 <p>
-                    <a href="/notes" class="btn btn-default">
+                    <a href="/snotes" class="btn btn-default">
                         <i class="fa fa-chevron-left" aria-hidden="true"></i> Notes
                     </a>
                 </p>
