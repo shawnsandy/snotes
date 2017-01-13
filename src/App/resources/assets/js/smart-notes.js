@@ -19,12 +19,14 @@ $(document).ready(function () {
             airMode: true
         });
 
+        $
+
         $(".add-image").each(function () {
             $(this).click(function (e) {
                 e.preventDefault();
                 var src = $(this).data("src");
                 $(editor).summernote("insertImage", src, function($image){
-                    $image.attr("class", "img-responsive")
+                    $image.attr("class", "notes-photo img-responsive")
                 });
                 $("#img-modal").modal("hide");
             })
