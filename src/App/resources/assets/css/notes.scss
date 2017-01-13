@@ -48,72 +48,6 @@ a {
 
 }
 
-#notes .nav {
-  margin: 40px 0;
-  height:40px;
-  .btn {
-    @include border-radius(20px);
-    border-width: 2px;
-    color: #919191;
-    @include transition(all 2.0s ease-in-out);
-
-    i {
-      @include fontSize(18)
-    }
-  }
-}
-
-
-
-.adv-notes {
-
-  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  padding: 10px;
-  #adv-notes {
-    width: 100%;
-    min-height: 300px;
-  }
-
-  .notes-logo-text {
-    font-size: 18px;
-    color: #D8D8D8;
-  }
-
-  .notes-toolbar {
-    padding: 5px;
-    display: flex;
-    min-height: 36px;
-    align-items: center;
-
-    .col {
-      margin: 0 10px;
-    }
-
-    .col-fluid {
-      flex-grow: 2;
-    }
-
-    button {
-      height: 34px;
-      background-color: #fff;
-      border: 1px solid #9B9B9B;
-      color: #9B9B9B;
-      font-size: 13px;
-      margin: 0 5px;
-      padding: 0 12px;
-      &:hover {
-        border-color: #55ADF8;
-        color: darken(#55ADF8, 25%);
-      }
-
-    }
-    input, .form-control {
-      width: auto;
-
-    }
-  }
-
-}
 
 .collections {
 
@@ -175,39 +109,6 @@ a {
 
 }
 
-
-.notes-insert-img {
-  padding: 40px;
-}
-
-#img-modal {
-  img {
-    padding: 7px;
-    box-sizing: border-box;
-    background-color: $logo-lite;
-  }
-
-  p {
-    @include fontSize(12)
-  }
-
-  .modal-body {
-    height: 600px;
-    overflow: hidden;
-    overflow-y: auto;
-  }
-
-  .btn {
-    margin-top: 5px;
-    @include border-radius(20px);
-  }
-
-}
-
-.confirm-trash {
-  display: none;
-  color: red;
-}
 
 footer {
   min-height: 100px;
