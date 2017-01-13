@@ -13,7 +13,7 @@ use Storage;
  *
  * @package ShawnSandy\Summernote
  */
-class NotesServicesProvider extends ServiceProvider
+class SummerNotesServicesProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -35,7 +35,7 @@ class NotesServicesProvider extends ServiceProvider
         $this->publishes(
             [
                 __DIR__ . '/resources/views' => resource_path('views/vendor/snotes'),
-            ], 'notes-views'
+            ], 'summernote-views'
         );
 
         /**
@@ -48,7 +48,7 @@ class NotesServicesProvider extends ServiceProvider
               __DIR__.'./App/resources/assets/js/' => public_path('assets/notes/js/'),
               __DIR__.'./public/assets/' => public_path('assets/'),
               __DIR__.'./public/img/' => public_path('img/notes/'),
-          ], 'notes-assets'
+          ], 'summernote-assets'
         );
 
         /**
@@ -56,7 +56,7 @@ class NotesServicesProvider extends ServiceProvider
          */
         $this->publishes(
             [__DIR__ . '/App/config/config.php' => config_path('notes.php')],
-            'notes-config'
+            'summernote-config'
         );
 
 
@@ -101,7 +101,7 @@ class NotesServicesProvider extends ServiceProvider
             __DIR__ . '/App/config/config.php', 'notes'
         );
         $this->app->bind(
-            'Notes', function () {
+            'Summernote', function () {
                 return new Notes();
             }
         );
