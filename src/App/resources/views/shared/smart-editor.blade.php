@@ -33,7 +33,7 @@
 @include('notes::partials.image-manager')
 
 @push('styles')
-<link rel="stylesheet" href="/assets/notes/css/note-editor.css">
+
 @endpush
 
 @push('scripts')
