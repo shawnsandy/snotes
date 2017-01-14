@@ -14,4 +14,5 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('/snotes', 'ShawnSandy\Summernote\App\Controllers\NotesController');
     Route::get('/snotes/img/{path}', 'ShawnSandy\Summernote\App\Controllers\ImagesController')->where('path', '.*');
 
+
 });

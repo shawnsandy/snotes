@@ -1,7 +1,7 @@
 @extends('notes::shared.app')
 @section('title', 'Create a new Note')
 @section('content')
-    <form action="/notes" method="POST">
+    <form action="/snotes" method="POST">
         {{ csrf_field() }}
         <div id="notes" class="container">
 

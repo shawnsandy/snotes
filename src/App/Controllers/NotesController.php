@@ -49,7 +49,7 @@
         {
             $notes = $request->user()->snotes()->create($request->all());
             if ($notes):
-                return redirect('/notes/' . $notes->id . '/edit')->with('success', 'Your notes has been created, you can continue editing');
+                return redirect('/snotes/' . $notes->id . '/edit')->with('success', 'Your notes has been created, you can continue editing');
             endif;
 
             return back()->withInput()->with('error', 'Sorry failed to create note');
@@ -87,9 +87,9 @@
             $note->delete();
 
             if ($note->trashed())
-                return redirect('/notes')->with('success', 'Your note has bee moved to the trash');
+                return redirect('/snotes')->with('success', 'Your note has bee moved to the trash');
 
-            return redirect('/notes/' . $id . '/edit')->with('error', 'Sorry you note was not deleted');
+            return redirect('/snotes/' . $id . '/edit')->with('error', 'Sorry you note was not deleted');
 
         }
 

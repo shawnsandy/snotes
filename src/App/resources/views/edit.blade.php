@@ -2,7 +2,7 @@
 @section('title', 'Edit Note')
 @section('content')
 
-    <form action="/notes/{{ $note->id }}" method="post">
+    <form action="/snotes/{{ $note->id }}" method="post">
         {{ method_field('PUT') }}
         {{ csrf_field() }}
         <div id="notes" class="container">
