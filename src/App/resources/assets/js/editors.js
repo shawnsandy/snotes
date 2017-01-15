@@ -1,12 +1,35 @@
-/**
- * Created by Shawn on 1/1/2017.
- */
+"use strict";
 
-$(document).ready(function () {
+/*get the editor settings from the data-attributes*/
+var el = $(".summernote-editor");
+
+var height = (el.data("height")) ? el.data("height") : "300";
+/*var height = (el.data()) ?$el.data() : "";*/
+
+/* check if toolbar is set if note set to null*/
+if(!toolbar && typeof toolbar == "undefined" && toolbar != null && toolbar.length > 0) { toolbar = null;}
+
+var summernotes = function () {
+
+    $(el).each(function () {
+
+        /*setup a switch to function get the toolbar config*/
+        $(this).summernote({
+            height: height,
+            minHeight: null,
+            maxHeight: null,
+            focus: true,
+            toolbar: toolbar
+        })
+    });
+
+};
+
+var summernote_smart_editor = function () {
 
     $(".smart-editor").each(function () {
 
-        var editor = $(this).data("notesEditor");
+        var editor = $(this).data("editor");
         var placeholder = $(this).data("notesPlaceholder") ? $(this).data("notesPlaceholder") : "Now lets add some details here...";
 
         /**
@@ -23,7 +46,7 @@ $(document).ready(function () {
             $(this).click(function (e) {
                 e.preventDefault();
                 var src = $(this).data("src");
-                $(editor).summernote("insertImage", src, function($image){
+                $(editor).summernote("insertImage", src, function ($image) {
                     $image.attr("class", "notes-photo img-responsive")
                 });
                 $("#img-modal").modal("hide");
@@ -42,5 +65,5 @@ $(document).ready(function () {
         buttons.toggle();
     })
 
+};
 
-});
