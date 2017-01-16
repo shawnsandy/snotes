@@ -1,5 +1,6 @@
 html {
-  font-size: 16px !important; }
+  font-size: 16px !important;
+  color: #919191; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -10,9 +11,9 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3 {
   margin-top: 0; }
 
 p {
-  line-height: 1.7;
-  font-size: 17px;
-  font-size: 1.0625em; }
+  line-height: 1.9;
+  font-size: 18px;
+  font-size: 1.125em; }
 
 header {
   height: 380px;
@@ -45,7 +46,7 @@ a:hover i, a:focus i {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
 
-.collections .a-note .h1, .collections .a-note p, .collections .note .h1, .collections .note p {
+.collections .a-note .h1, .collections .a-note p, .collections .a-note span, .collections .a-note div, .collections .note .h1, .collections .note p, .collections .note span, .collections .note div {
   color: #919191; }
 
 .collections .a-note .note-title, .collections .note .note-title {

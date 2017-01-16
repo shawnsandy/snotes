@@ -4,6 +4,7 @@
 
 html {
   font-size: 16px !important;
+  color: #919191;
 }
 
 body {
@@ -17,8 +18,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3 {
 }
 
 p {
-  line-height: 1.7;
-  @include fontSize(17);
+  line-height: 1.9;
+  @include fontSize(18);
 }
 
 header {
@@ -57,7 +58,7 @@ a {
     background-color: #FFFFFF;
     border: solid 1px darken(#FBFBFB, 5%);
     @include border-radius(7px);
-    .h1, p {
+    .h1, p, span, div {
       color: #919191;
     }
 
@@ -85,6 +86,10 @@ a {
 
     }
   }
+
+}
+
+.meta {
 
 }
 

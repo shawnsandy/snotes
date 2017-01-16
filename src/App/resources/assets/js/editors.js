@@ -20,12 +20,10 @@ var toolbarModeFull = [
     ['style', ['style', 'bold', 'italic', 'underline', 'clear']],
     ['font', ['strikethrough', 'superscript', 'subscript', 'color', 'clear', 'height']],
     ['fontsize', ['fontsize']],
-    ['color', ['color']],
     ['para', ['ul', 'ol', 'paragraph', 'table']],
     ['insert', ['picture', 'link', 'video', 'hr']],
     ['misc', ['undo', 'redo', 'codeview', 'fullscreen']]
 ];
-
 
 var toolbarAirMode = [
     ['font', ['color', 'bold', 'underline', 'clear']],
