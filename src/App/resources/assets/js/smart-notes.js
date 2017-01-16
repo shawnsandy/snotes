@@ -7,10 +7,12 @@ $(document).ready(function () {
     $(".smart-editor").each(function () {
 
         var editor = $(this).data("notesEditor");
-        var imgBtn = $(this).data("insertImg");
         var placeholder = $(this).data("notesPlaceholder") ? $(this).data("notesPlaceholder") : "Now lets add some details here...";
 
-        /* instantiate the editor */
+        /**
+         *  instantiate the editor
+         */
+
         $(editor).summernote({
             placeholder: placeholder,
             focus: true,
@@ -21,15 +23,20 @@ $(document).ready(function () {
             $(this).click(function (e) {
                 e.preventDefault();
                 var src = $(this).data("src");
-                $(editor).summernote("insertImage", src);
+                $(editor).summernote("insertImage", src, function($image){
+                    $image.attr("class", "notes-photo img-responsive")
+                });
                 $("#img-modal").modal("hide");
             })
         });
 
     });
 
-    var trash = $(this).find(".trash");
-    var buttons = $(this).find(".btn");
+    /**
+     * Nav btn js
+     */
+    var trash = $(".trash");
+    var buttons = $(".nav-btn");
     $(trash).click(function (e) {
         e.preventDefault();
         buttons.toggle();

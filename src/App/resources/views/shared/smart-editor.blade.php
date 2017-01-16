@@ -3,7 +3,7 @@
 @endphp
 
 <div class="note">
-    <div class="smart-editor" data-notes-editor="#adv-notes" data-notes-img-btn=".insert-img">
+    <div class="smart-editor" data-editor="#adv-notes" data-img-btn=".insert-img">
         <p>
             <input type="text" name="notes_title" class="col-fluid {{ $errors->first('notes_title', 'error') }}"
                    placeholder="* Whats the title of this note?"
@@ -33,10 +33,14 @@
 @include('notes::partials.image-manager')
 
 @push('styles')
-<link rel="stylesheet" href="/assets/notes/css/note-editor.css">
+
 @endpush
 
 @push('scripts')
-{{--@include('notes::partials.smart-notes-js')--}}
-<script src="/assets/notes/js/smart-notes.js"></script>
+<script src="/assets/notes/js/editors.js"></script>
+<script>
+    $(document).ready(function(){
+        summernoteSmartEditor();
+    });
+</script>
 @endpush

@@ -21,7 +21,7 @@ class NotesFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return "Notes";
+        return "Summernote";
     }
 
 }

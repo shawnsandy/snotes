@@ -8,11 +8,11 @@
 ?>
 
 
-<button class="btn btn-default delete trash" type="button"><i class="fa fa-trash" aria-hidden="true"></i> Move to trash
+<button class="btn btn-default delete trash nav-btn" type="button"><i class="fa fa-trash" aria-hidden="true"></i> Move to trash
 </button>
-<a href="/notes/trash/{{$id}}" class="btn btn-default confirm-trash"><i class="fa fa-trash" aria-hidden="true"></i>
+<a href="/snotes/trash/{{$id}}" class="btn btn-default confirm-trash nav-btn"><i class="fa fa-trash" aria-hidden="true"></i>
     Continue to trash</a>
-<button class="btn btn-default delete confirm-trash trash" type="button"><i class="fa fa-times" aria-hidden="true"></i>
+<button class="btn btn-default delete confirm-trash trash nav-btn" type="button"><i class="fa fa-times" aria-hidden="true"></i>
     Cancel
 </button>
 

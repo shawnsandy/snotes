@@ -2,12 +2,12 @@
 @section('title', 'Edit Note')
 @section('content')
 
-    <form action="/notes/{{ $note->id }}" method="post">
+    <form action="/snotes/{{ $note->id }}" method="post">
         {{ method_field('PUT') }}
         {{ csrf_field() }}
         <div id="notes" class="container">
             <div class="text-right nav">
-                <a href="/notes" class="btn btn-default">
+                <a href="/snotes" class="btn btn-default nav-btn">
                     <i class="fa fa-chevron-left" aria-hidden="true"></i> Notes
                 </a>
                 @include('notes::partials.delete-btn',['id' => $note->id])

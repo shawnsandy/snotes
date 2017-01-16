@@ -1,7 +1,5 @@
 @php
 //php here
 @endphp
-<p>
-    <img src="img/{{ $img }}" alt="">
-</p>
+<p> <img src="img/{{ $img }}" alt=""></p>
 
