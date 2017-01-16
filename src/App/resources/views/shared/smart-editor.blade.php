@@ -37,11 +37,10 @@
 @endpush
 
 @push('scripts')
-{{--@include('notes::partials.smart-notes-js')--}}
-<script src="/assets/notes/js/summernote/editor.js"></script>
+<script src="/assets/notes/js/editors.js"></script>
 <script>
     $(document).ready(function(){
-        summernote_smart_editor();
+        summernoteSmartEditor();
     });
 </script>
 @endpush

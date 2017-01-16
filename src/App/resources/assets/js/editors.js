@@ -6,10 +6,39 @@ var el = $(".summernote-editor");
 var height = (el.data("height")) ? el.data("height") : "300";
 /*var height = (el.data()) ?$el.data() : "";*/
 
-/* check if toolbar is set if note set to null*/
-if(!toolbar && typeof toolbar == "undefined" && toolbar != null && toolbar.length > 0) { toolbar = null;}
+/*toolbars*/
 
-var summernotes = function () {
+var toolbarModeLite = [
+    ['style', ['style', 'bold', 'italic', 'underline', 'clear']],
+    ['color', ['color']],
+    ['para', ['paragraph']],
+    ['insert', ['link', 'hr']],
+    ['misc', ['undo', 'redo', 'fullscreen']]
+];
+
+var toolbarModeFull = [
+    ['style', ['style', 'bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough', 'superscript', 'subscript', 'color', 'clear', 'height']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph', 'table']],
+    ['insert', ['picture', 'link', 'video', 'hr']],
+    ['misc', ['undo', 'redo', 'codeview', 'fullscreen']]
+];
+
+
+var toolbarAirMode = [
+    ['font', ['color', 'bold', 'underline', 'clear']],
+    ['style', ['style', 'ol', 'ul']],
+    ['insert', ['link', 'video', 'table', 'hr']]
+];
+
+/* check if toolbar is set if note set to null*/
+if (!toolbar && typeof toolbar == "undefined" && toolbar != null && toolbar.length > 0) {
+    toolbar = null;
+}
+
+var summernoteDefault = function () {
 
     $(el).each(function () {
 
@@ -25,7 +54,7 @@ var summernotes = function () {
 
 };
 
-var summernote_smart_editor = function () {
+var summernoteSmartEditor = function () {
 
     $(".smart-editor").each(function () {
 
@@ -39,7 +68,10 @@ var summernote_smart_editor = function () {
         $(editor).summernote({
             placeholder: placeholder,
             focus: true,
-            airMode: true
+            airMode: true,
+            popover: {
+                air: toolbarAirMode
+            }
         });
 
         $(".add-image").each(function () {
