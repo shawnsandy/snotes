@@ -22,7 +22,7 @@
                 <div class="meta text-right layout-center">
                     <div class="content">
                         <span>
-                            Posted {{ Carbon\Carbon::parse($note->created_at)->diffForHumans() }}
+                           <i class="fa fa-circle-o"></i> Posted {{ Carbon\Carbon::parse($note->created_at)->diffForHumans() }}
                             by {{ ucwords($note->user->name) }}
                         </span>
                     </div>

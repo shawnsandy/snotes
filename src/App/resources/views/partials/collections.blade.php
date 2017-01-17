@@ -17,7 +17,7 @@
             </div>
             <div class="layout-center" style="width: 100px">
                 <div>
-                   <span>{{ \Carbon\Carbon::parse($notes->created_at)->diffForHumans() }}</span>
+                   <span class="small"><i class="fa fa-circle-o"></i> {{ \Carbon\Carbon::parse($notes->created_at)->diffForHumans() }} </span>
                 </div>
             </div>
         </div>
