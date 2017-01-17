@@ -22,7 +22,7 @@
     endif;
 
     if (!function_exists('notesFontAwesome')):
-        /*https://www.bootstrapcdn.com/fontawesome/*/
+
         function notesFontAwesome()
         {
             return "<link href=\"/assets/font-awesome/css/font-awesome.css\" rel=\"stylesheet\">";
@@ -50,52 +50,3 @@
             return "<link href=\"http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css\" rel=\"stylesheet\">";
         }
     endif;
-
-
-    if (!function_exists('notesGetFiles')):
-
-
-        /**
-         * @param array|null $allowed
-         * @param string $disk
-         * @return static
-         */
-        function notesGetFiles($allowed = array(), $disk = "notes")
-        {
-
-        }
-
-    endif;
-
-
-    if (!function_exists('notesResizeImage')):
-
-
-        /**
-         * @param $photo
-         * @param array $params
-         * @param string $storage
-         * @return mixed
-         */
-    function notesResizeImage($photo, $params = [], $storage = 'img/')
-        {
-            $filesystem = new Filesystem();
-
-            $server = ServerFactory::create([
-                'response' => new LaravelResponseFactory(app('request')),
-                'source' => $filesystem->getDriver(), // I want Rackspace here
-                'cache' => $filesystem->getDriver(), // I want Rackspace here
-                'source_path_prefix' => 'images',
-                'cache_path_prefix' => 'images/.cache',
-                'base_url' => 'photos'
-            ]);
-
-            return $server->getImageResponse($path, request()->all());
-        }
-
-    endif;
-
-        function notesImages(){
-            return $images = notesGetFiles();
-
-        }
