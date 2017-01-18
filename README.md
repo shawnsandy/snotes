@@ -37,7 +37,7 @@ ShawnSandy\Summernote\SummerNoteServicesProvider::class
 - Publish the package assets 
 
 ``` bash 
-php artisan vendor:publish --tag=snotes-assets
+php artisan vendor:publish --tag=summernote-assets
 ```
 
 - Open your `App/User.php` and add NotesTrait you can find out more on traits here 
