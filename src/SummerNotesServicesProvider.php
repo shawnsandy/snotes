@@ -100,6 +100,7 @@ class SummerNotesServicesProvider extends ServiceProvider
        $this->mergeConfigFrom(
             __DIR__ . '/App/config/config.php', 'notes'
         );
+
         $this->app->bind(
             'Summernote', function () {
                 return new Notes();
