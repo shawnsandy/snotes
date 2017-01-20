@@ -1,5 +1,4 @@
 <div id="notes" class="container">
-    @include("notes::partials.nav")
 
     <div class="errors">
         @include('notes::partials.errors')

@@ -4,6 +4,9 @@
 
 <div class="note">
     <div class="smart-editor" data-editor="#adv-notes" data-img-btn=".insert-img">
+
+        @include("notes::partials.nav")
+
         <p>
             <input type="text" name="notes_title" class="col-fluid {{ $errors->first('notes_title', 'error') }}"
                    placeholder="* Whats the title of this note?"

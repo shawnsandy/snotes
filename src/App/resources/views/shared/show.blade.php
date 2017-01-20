@@ -1,9 +1,10 @@
 <div id="notes" class="container">
 
-    @include('notes::partials.nav')
-
     <div class="collections">
+
+
         <div class="note">
+            @include('notes::partials.nav')
             <p class="note-title">
                 {{ ucwords($note->notes_title) }}
             </p>
