@@ -16,8 +16,10 @@
             Route::resource('/snotes', 'ShawnSandy\Summernote\App\Controllers\NotesController');
 
         });
+
         Route::get('/snotes/index', 'ShawnSandy\Summernote\App\Controllers\NotesController@index');
-        Route::get('/snotes/img/{path}', 'ShawnSandy\Summernote\App\Controllers\ImagesController')->where('path', '.*');
+        Route::get('/snotes/img/{path}', 'ShawnSandy\Summernote\App\Controllers\ImagesController')
+            ->where('path', '.*');
         Route::get('/snotes/{id}', 'ShawnSandy\Summernote\App\Controllers\NotesController@show');
 
     });
