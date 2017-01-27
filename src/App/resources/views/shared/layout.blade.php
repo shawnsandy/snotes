@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <title>Notes @yield('title') </title>
-    <meta name="description" content="Summernote for laravel">
+    <meta name="description" content="@yield('description', 'Site description')">
     <meta name="author" content="Shawn Sandy">
     <!-- Latest compiled and minified CSS -->
     <!--[if lt IE 9]>
