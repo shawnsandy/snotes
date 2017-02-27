@@ -21,11 +21,11 @@
         {
             $server = ServerFactory::create([
                 'response' => new LaravelResponseFactory(app('request')),
-                'source' => $filesystem->getDriver(), // I want Rackspace here
-                'cache' => $filesystem->getDriver(), // I want Rackspace here
+                'source' => $filesystem->getDriver(),
+                'cache' => $filesystem->getDriver(),
                 'source_path_prefix' => '/',
                 'cache_path_prefix' => '/.cache',
-                'base_url' => 'photos'
+                'base_url' => 'img'
             ]);
 
             return $server->getImageResponse($path, request()->all());
